@@ -10,8 +10,8 @@ UARCHXML:=$(wildcard uarches/*.xml)
 all: validate
 
 validate: $(UARCHRNG) $(RELAXNG) $(XML) $(LISTS)
-	for i in $(XML) ; do xmlstarlet val -e -r $(RELAXNG) $$i ; done
-	for i in $(UARCHXML) ; do xmlstarlet val -e -r $(UARCHRNG) $$i ; done
+	for i in $(XML) ; do xmlstarlet val -e -r $(RELAXNG) $$i || exit 1 ; done
+	for i in $(UARCHXML) ; do xmlstarlet val -e -r $(UARCHRNG) $$i || exit 1 ; done
 
 generated/uarches.rng: $(MAKEFILE) $(UARCHXML)
 	mkdir -p $(@D)
@@ -20,9 +20,10 @@ generated/uarches.rng: $(MAKEFILE) $(UARCHXML)
 	 echo '<define name="uarches">' >> $@ && \
 	 echo " <choice>" >> $@ && \
 	 for i in $(UARCHXML) ; do \
-	  echo -n "  <value>" >> $@ && \
-	  xmlstarlet sel -t -v //uarch/@name $$i >> $@ && \
-	  echo "</value>" >> $@ ; done && \
+	  for j in `xmlstarlet sel -t -v //uarch/@name $$i` ; do \
+	   echo "  <value>$$j</value>" >> $@ ; \
+	  done ; \
+	 done && \
 	 echo " </choice>" >> $@ && \
 	 echo "</define>" >> $@ && \
 	 echo "</grammar>" >> $@

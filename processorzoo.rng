@@ -34,20 +34,41 @@
 		<element name="basehz"><data type="float"/></element>
 	</optional>
 
-<!-- In watts, as specified on the processor datasheet. -->
-	<optional>
-		<element name="tdp"><data type="float"/></element>
-	</optional>
-
-<!-- For multicores, cache accessible by only a subset of cores belongs in
+<!-- For multicores, caches/TLBs accessible by only a subset of cores belong in
      the respective uarch object. -->
+	<zeroOrMore>
+		<externalRef href="tlb.rng"/>
+	</zeroOrMore>
 	<zeroOrMore>
 		<externalRef href="cache.rng"/>
 	</zeroOrMore>
 	<zeroOrMore>
 		<externalRef href="bus.rng"/>
 	</zeroOrMore>
+
+<!-- PHYSICAL DATA -->
+
+	<optional> <!-- In watts, as specified on the processor datasheet. -->
+		<element name="tdp"><data type="float"/></element>
+	</optional>
+
+	<optional>
+		<element name="die"> <!-- area is in mm^2 -->
+			<interleave>
+			<optional>
+				<attribute name="socket"><data type="string"/></attribute>
+			</optional>
+			<zeroOrMore>
+				<choice>
+				<element name="area"><data type="float"/></element>
+				<element name="transistors"><data type="float"/></element>
+				</choice>
+			</zeroOrMore>
+			</interleave>
+		</element>
+	</optional>
 	</interleave>
+
 </element>
 </define>
 

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <codename name="beckton">
 
-<processor name="Xeon X7560">
- <core uarch="nehalem i7"><x>8</x></core>
+<processor name="X7560">
+ <core uarch="nehalem-htxeon"><x>8</x></core>
  <basehz>2.26e9</basehz>
  <tdp>130</tdp>
  <cache type="unified">
@@ -12,13 +12,15 @@
  <bus>
   <interface>qpi</interface>
   <x>4</x>
+  <baset>6.4e9</baset>
  </bus>
  <product>xeon</product>
+ <die socket="lga 1567"/>
 </processor>
 
-<processor name="Xeon X7550">
- <core uarch="nehalem i7"><x>8</x></core>
- <basehz>2.26e9</basehz>
+<processor name="X7550">
+ <core uarch="nehalem-htxeon"><x>8</x></core>
+ <basehz>2e9</basehz>
  <tdp>130</tdp>
  <cache type="unified">
   <l>3</l>
@@ -27,8 +29,10 @@
  <bus>
   <interface>qpi</interface>
   <x>4</x>
+  <baset>6.4e9</baset>
  </bus>
  <product>xeon</product>
+ <die socket="lga 1567"/>
 </processor>
 
 </codename>

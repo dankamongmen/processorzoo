@@ -8,6 +8,9 @@
 			<optional>
 				<element name="x"><data type="int"/></element>
 			</optional>
+			<optional>
+				<element name="baset"><data type="float"/></element>
+			</optional>
 		</interleave>
 	</element>
  </start>

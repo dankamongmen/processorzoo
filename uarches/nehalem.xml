@@ -1,5 +1,37 @@
-<uarch name="nehalem i7">
+<uarchfam name="nehalem">
+<uarch name="nehalem-htxeon">
 	<smt>2</smt>
 	<isa name="i686"/>
 	<isa name="x86-64"/>
 </uarch>
+
+<uarch name="nehalem-xeon">
+	<smt>1</smt>
+	<isa name="i686"/>
+	<isa name="x86-64"/>
+</uarch>
+
+<uarch name="nehalem-i7-extreme">
+	<smt>2</smt>
+	<isa name="i686"/>
+	<isa name="x86-64"/>
+</uarch>
+
+<uarch name="nehalem-i7">
+	<smt>2</smt>
+	<isa name="i686"/>
+	<isa name="x86-64"/>
+</uarch>
+
+<uarch name="nehalem-i5">
+	<smt>1</smt>
+	<isa name="i686"/>
+	<isa name="x86-64"/>
+</uarch>
+
+<uarch name="nehalem-i3">
+	<smt>2</smt>
+	<isa name="i686"/>
+	<isa name="x86-64"/>
+</uarch>
+</uarchfam>

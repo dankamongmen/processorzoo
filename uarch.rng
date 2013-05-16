@@ -2,6 +2,21 @@
  xmlns="http://relaxng.org/ns/structure/1.0">
 
  <start>
+	<choice>
+
+	<element name="uarchfam">
+		<attribute name="name"><data type="string"/></attribute>
+		<oneOrMore>
+			<ref name="uarch"/>
+		</oneOrMore>
+	</element>
+
+	<ref name="uarch"/>
+
+	</choice>
+ </start>
+
+	<define name="uarch">
 	<element name="uarch">
 	<attribute name="name"><data type="string"/></attribute>
 	<interleave>
@@ -15,6 +30,6 @@
 		</oneOrMore>
 	</interleave>
 	</element>
- </start>
+	</define>
 
 </grammar>

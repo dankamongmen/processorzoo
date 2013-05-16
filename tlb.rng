@@ -1,0 +1,25 @@
+<grammar datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+ xmlns="http://relaxng.org/ns/structure/1.0">
+
+ <start>
+	<element name="tlb">
+		<attribute name="type">
+			<choice>
+				<value>unified</value>
+				<value>data</value>
+				<value>code</value>
+			</choice>
+		</attribute>
+		<interleave>
+			<element name="l"><data type="integer"/></element>
+			<element name="entries"><data type="integer"/></element>
+			<oneOrMore>
+				<element name="page">
+					<attribute name="size"><data type="float"/></attribute>
+				</element>
+			</oneOrMore>
+		</interleave>
+	</element>
+ </start>
+
+</grammar>
