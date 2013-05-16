@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<processor name="Xeon X7560">
+ <uarch>nehalem</uarch>
+ <basehz>2.26G</basehz>
+ <tdp>130</tdp>
+ <cache>
+  <l>3</l>
+  <unified/>
+  <b>24M</b>
+ </cache>
+ <bus>
+  <interface>qpi</interface>
+  <x>4</x>
+ </bus>
+</processor>

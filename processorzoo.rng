@@ -1,0 +1,18 @@
+<grammar datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+ xmlns="http://relaxng.org/ns/structure/1.0">
+
+ <start>
+	<!-- Ideally, the CPU string as reported by CPUID (though
+	     this is, apparently, BIOS-programmed?) or a SKU name. -->
+	<element name="processor">
+		<attribute name="name"><data type="string"/></attribute>
+		<oneOrMore>
+			<element name="uarch"><text/></element>
+		</oneOrMore>
+		<optional>
+			<element name="basehz"><data type="float"/></element>
+		</optional>
+	</element>
+ </start>
+
+</grammar>

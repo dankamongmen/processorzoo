@@ -1,2 +1,2 @@
-<processor name="i7-2600K">
-</processor>
+<?xml version="1.0"?>
+<processor name="i7-2600K"><uarch>sandybridge</uarch></processor>

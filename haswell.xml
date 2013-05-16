@@ -1,0 +1,3 @@
+<processor name="i7-4770K">
+ <uarch>haswell</uarch>
+</processor>
