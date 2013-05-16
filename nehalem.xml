@@ -12,5 +12,6 @@
   <interface>qpi</interface>
   <x>4</x>
  </bus>
+ <product>xeon</product>
 </processor>
 </codename>

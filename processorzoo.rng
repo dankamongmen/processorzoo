@@ -17,6 +17,7 @@
 <element name="processor">
 	<attribute name="name"><data type="string"/></attribute>
 	<interleave>
+	<optional><element name="product"><text/></element></optional>
 	<oneOrMore>
 		<ref name="core"/>
 	</oneOrMore>
