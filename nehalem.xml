@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <codename name="beckton">
+
 <processor name="Xeon X7560">
- <core uarch="nehalem i7"><x>4</x></core>
+ <core uarch="nehalem i7"><x>8</x></core>
  <basehz>2.26e9</basehz>
  <tdp>130</tdp>
  <cache type="unified">
@@ -14,4 +15,20 @@
  </bus>
  <product>xeon</product>
 </processor>
+
+<processor name="Xeon X7550">
+ <core uarch="nehalem i7"><x>8</x></core>
+ <basehz>2.26e9</basehz>
+ <tdp>130</tdp>
+ <cache type="unified">
+  <l>3</l>
+  <b>24e6</b>
+ </cache>
+ <bus>
+  <interface>qpi</interface>
+  <x>4</x>
+ </bus>
+ <product>xeon</product>
+</processor>
+
 </codename>

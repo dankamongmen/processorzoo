@@ -17,6 +17,11 @@
 <element name="processor">
 	<attribute name="name"><data type="string"/></attribute>
 	<interleave>
+
+<!-- Codenames can span products, and products can span codenames. For an
+     example, see Bloomfield, which is both a Core i7 Extreme and a Core i7.
+     Meanwhile, Core i7 Nehalem spans Bloomfield and Lynnfield. -->
+
 	<optional><element name="product"><text/></element></optional>
 	<oneOrMore>
 		<ref name="core"/>
@@ -52,6 +57,13 @@
     </optional>
    </interleave>
   </element>
+ </define>
+
+ <define name="uarch">
+	<attribute name="name"><data type="string"/></attribute>
+	<interleave>
+		<optional><element name="smt"><data type="integer"/></element></optional>
+	</interleave>
  </define>
 
 </grammar>

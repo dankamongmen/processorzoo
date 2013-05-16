@@ -1,2 +1,3 @@
 <uarch name="nehalem i7">
+	<smt>2</smt>
 </uarch>
