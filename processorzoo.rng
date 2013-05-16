@@ -2,29 +2,39 @@
  xmlns="http://relaxng.org/ns/structure/1.0">
 
  <start>
-	<!-- Ideally, the CPU string as reported by CPUID (though
-	     this is, apparently, BIOS-programmed?) or a SKU name. -->
-	<element name="processor">
+	<element name="codename">
 		<attribute name="name"><data type="string"/></attribute>
-	    <interleave>
 		<oneOrMore>
-			<ref name="core"/>
+			<ref name="processor"/>
 		</oneOrMore>
-		<optional>
-			<element name="basehz"><data type="float"/></element>
-		</optional>
-		<optional>
-			<element name="tdp"><data type="float"/></element>
-		</optional>
-		<zeroOrMore>
-			<externalRef href="cache.rng"/>
-		</zeroOrMore>
-		<zeroOrMore>
-			<externalRef href="bus.rng"/>
-		</zeroOrMore>
-	    </interleave>
 	</element>
+
  </start>
+
+<!-- Ideally, the CPU string as reported by CPUID (though
+	this is, apparently, BIOS-programmed?) or a SKU name. -->
+<define name="processor">
+<element name="processor">
+	<attribute name="name"><data type="string"/></attribute>
+	<interleave>
+	<oneOrMore>
+		<ref name="core"/>
+	</oneOrMore>
+	<optional>
+		<element name="basehz"><data type="float"/></element>
+	</optional>
+	<optional>
+		<element name="tdp"><data type="float"/></element>
+	</optional>
+	<zeroOrMore>
+		<externalRef href="cache.rng"/>
+	</zeroOrMore>
+	<zeroOrMore>
+		<externalRef href="bus.rng"/>
+	</zeroOrMore>
+	</interleave>
+</element>
+</define>
 
  <include href="generated/uarches.rng"/>
 

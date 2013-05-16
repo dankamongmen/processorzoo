@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<codename name="beckton">
 <processor name="Xeon X7560">
  <core uarch="nehalem i7"><x>4</x></core>
  <basehz>2.26e9</basehz>
@@ -12,3 +13,4 @@
   <x>4</x>
  </bus>
 </processor>
+</codename>
