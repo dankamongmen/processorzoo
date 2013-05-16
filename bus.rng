@@ -1,0 +1,15 @@
+<grammar datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+ xmlns="http://relaxng.org/ns/structure/1.0">
+
+ <start>
+	<element name="bus">
+		<interleave>
+			<element name="interface"><text/></element>
+			<optional>
+				<element name="x"><data type="int"/></element>
+			</optional>
+		</interleave>
+	</element>
+ </start>
+
+</grammar>

@@ -12,6 +12,15 @@
 		<optional>
 			<element name="basehz"><data type="float"/></element>
 		</optional>
+		<optional>
+			<element name="tdp"><data type="float"/></element>
+		</optional>
+		<zeroOrMore>
+			<externalRef href="cache.rng"/>
+		</zeroOrMore>
+		<zeroOrMore>
+			<externalRef href="bus.rng"/>
+		</zeroOrMore>
 	</element>
  </start>
 
