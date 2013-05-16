@@ -1,6 +1,7 @@
 .DELETE_ON_ERROR:
 .PHONY: all validate clean
 
+UARCHRNG:=uarch.rng
 RELAXNG:=processorzoo.rng
 XML:=$(wildcard *.xml)
 LISTS:=$(addprefix generated/,uarches.rng)
@@ -8,8 +9,9 @@ UARCHXML:=$(wildcard uarches/*.xml)
 
 all: validate
 
-validate: $(RELAXNG) $(XML) $(LISTS)
+validate: $(UARCHRNG) $(RELAXNG) $(XML) $(LISTS)
 	for i in $(XML) ; do xmlstarlet val -e -r $(RELAXNG) $$i ; done
+	for i in $(UARCHXML) ; do xmlstarlet val -e -r $(UARCHRNG) $$i ; done
 
 generated/uarches.rng: $(MAKEFILE) $(UARCHXML)
 	mkdir -p $(@D)
@@ -19,7 +21,7 @@ generated/uarches.rng: $(MAKEFILE) $(UARCHXML)
 	 echo " <choice>" >> $@ && \
 	 for i in $(UARCHXML) ; do \
 	  echo -n "  <value>" >> $@ && \
-	  xmlstarlet sel -t -v //@name $$i >> $@ && \
+	  xmlstarlet sel -t -v //uarch/@name $$i >> $@ && \
 	  echo "</value>" >> $@ ; done && \
 	 echo " </choice>" >> $@ && \
 	 echo "</define>" >> $@ && \

@@ -26,12 +26,21 @@
 	<oneOrMore>
 		<ref name="core"/>
 	</oneOrMore>
+
+<!-- In Hz, as specified on the processor datasheet, with neither underclocking
+     nor overclocking nor TurboBoost etc. turned on. -->
+
 	<optional>
 		<element name="basehz"><data type="float"/></element>
 	</optional>
+
+<!-- In watts, as specified on the processor datasheet. -->
 	<optional>
 		<element name="tdp"><data type="float"/></element>
 	</optional>
+
+<!-- For multicores, cache accessible by only a subset of cores belongs in
+     the respective uarch object. -->
 	<zeroOrMore>
 		<externalRef href="cache.rng"/>
 	</zeroOrMore>
@@ -60,10 +69,7 @@
  </define>
 
  <define name="uarch">
-	<attribute name="name"><data type="string"/></attribute>
-	<interleave>
-		<optional><element name="smt"><data type="integer"/></element></optional>
-	</interleave>
+	<externalRef href="uarch.rng"/>
  </define>
 
 </grammar>

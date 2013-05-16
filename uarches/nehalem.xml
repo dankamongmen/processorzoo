@@ -1,3 +1,5 @@
 <uarch name="nehalem i7">
 	<smt>2</smt>
+	<isa name="i686"/>
+	<isa name="x86-64"/>
 </uarch>
