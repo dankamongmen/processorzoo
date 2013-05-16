@@ -1,3 +1,9 @@
 <processor name="i7-4770K">
- <uarch>haswell</uarch>
+ <core uarch="haswell i7"><x>4</x></core>
+ <basehz>3.5e9</basehz>
+ <cache type="unified">
+  <l>3</l>
+  <b>8e6</b>
+ </cache>
+ <tdp>84</tdp>
 </processor>

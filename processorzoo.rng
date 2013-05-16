@@ -6,8 +6,9 @@
 	     this is, apparently, BIOS-programmed?) or a SKU name. -->
 	<element name="processor">
 		<attribute name="name"><data type="string"/></attribute>
+	    <interleave>
 		<oneOrMore>
-			<element name="uarch"><text/></element>
+			<ref name="core"/>
 		</oneOrMore>
 		<optional>
 			<element name="basehz"><data type="float"/></element>
@@ -21,7 +22,25 @@
 		<zeroOrMore>
 			<externalRef href="bus.rng"/>
 		</zeroOrMore>
+	    </interleave>
 	</element>
  </start>
+
+ <include href="generated/uarches.rng"/>
+
+ <define name="core">
+  <element name="core">
+   <attribute name="uarch">
+    <ref name="uarches"/>
+   </attribute>
+   <interleave>
+    <optional>
+     <element name="x">
+      <data type="integer"/>
+     </element>
+    </optional>
+   </interleave>
+  </element>
+ </define>
 
 </grammar>

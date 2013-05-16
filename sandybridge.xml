@@ -1,2 +1,4 @@
 <?xml version="1.0"?>
-<processor name="i7-2600K"><uarch>sandybridge</uarch></processor>
+<processor name="i7-2600K">
+	<core uarch="sandy bridge i7"><x>4</x></core>
+</processor>

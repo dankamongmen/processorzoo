@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <processor name="Xeon X7560">
- <uarch>nehalem</uarch>
+ <core uarch="nehalem i7"><x>4</x></core>
  <basehz>2.26e9</basehz>
  <tdp>130</tdp>
  <cache type="unified">
