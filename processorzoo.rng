@@ -60,8 +60,17 @@
 			</optional>
 			<zeroOrMore>
 				<choice>
+				<!-- Expressed in mm^2 as base unit -->
 				<element name="area"><data type="float"/></element>
+
 				<element name="transistors"><data type="float"/></element>
+
+				<!-- Expressed in nanometers as base unit -->
+				<element name="process"><data type="float"/></element>
+
+				<element name="tech"><data type="string"/></element>
+				<element name="volts"><data type="float"/></element>
+				<element name="package"><data type="string"/></element>
 				</choice>
 			</zeroOrMore>
 			</interleave>
