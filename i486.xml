@@ -1,0 +1,23 @@
+<codename name="i486">
+<processor name="Am486 DX-40">
+ <core uarch="amd486"></core>
+ <basehz>40</basehz>
+ <cache type="unified">
+  <l>1</l>
+  <b>8192</b>
+ </cache>
+ <die>
+  <transistors>1e6</transistors>
+  <volts>5</volts>
+ </die>
+</processor>
+
+<processor name="Am486 DX-40">
+ <core uarch="amd486"></core>
+ <basehz>40</basehz>
+ <cache type="unified">
+  <l>1</l>
+  <b>8192</b>
+ </cache>
+</processor>
+</codename>

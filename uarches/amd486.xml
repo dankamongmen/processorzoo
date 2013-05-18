@@ -1,0 +1,3 @@
+<uarch name="amd486">
+	<isa name="i486"/>
+</uarch>
