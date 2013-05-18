@@ -1,0 +1,3 @@
+<uarch name="amd386">
+	<isa name="i386"/>
+</uarch>

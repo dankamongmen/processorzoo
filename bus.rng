@@ -3,14 +3,39 @@
 
  <start>
 	<element name="bus">
+		<attribute name="type"><text/></attribute>
 		<interleave>
-			<element name="interface"><text/></element>
+
+			<!-- Number of lanes -->
 			<optional>
 				<element name="x"><data type="int"/></element>
 			</optional>
+
+			<!-- Indicate that we are half-duplex -->
 			<optional>
-				<element name="baset"><data type="float"/></element>
+				<element name="halfduplex"><empty/></element>
 			</optional>
+
+			<!-- Number of bytes per lane -->
+			<optional>
+				<element name="b"><data type="int"/></element>
+			</optional>
+
+			<!-- Transfers per second as reported at full rate -->
+			<optional>
+				<choice>
+				<element name="baset"><data type="float"/></element>
+				<element name="clock">
+					<interleave>
+					<element name="basehz"><data type="float"/></element>
+					<optional>
+					<element name="mult"><data type="float"/></element>
+					</optional>
+					</interleave>
+				</element>
+				</choice>
+			</optional>
+
 		</interleave>
 	</element>
  </start>

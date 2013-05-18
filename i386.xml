@@ -1,0 +1,54 @@
+<codename name="i386">
+<processor name="Am386 DX-20">
+ <core uarch="amd386"></core>
+ <basehz>20</basehz>
+ <tdp>1.05</tdp>
+ <die>
+  <process>1500</process>
+  <package>132CPGA</package>
+ </die>
+ <bus type="fsb">
+  <b>4</b>
+  <clock>
+   <basehz>20</basehz>
+  </clock>
+ </bus>
+</processor>
+<processor name="Am386 DX-25">
+ <core uarch="amd386"></core>
+ <basehz>25</basehz>
+ <tdp>1.31</tdp>
+ <die>
+  <process>1500</process>
+  <package>132CPGA</package>
+ </die>
+</processor>
+<processor name="Am386 DX-33">
+ <core uarch="amd386"></core>
+ <basehz>33</basehz>
+ <tdp>1.73</tdp>
+ <die>
+  <process>1500</process>
+  <package>132CPGA</package>
+ </die>
+</processor>
+<processor name="Am386 DX-40">
+ <core uarch="amd386"></core>
+ <basehz>40</basehz>
+ <tdp>2.10</tdp>
+ <die>
+  <process>1500</process>
+  <package>132CPGA</package>
+ </die>
+</processor>
+<processor name="Am386 DX-40">
+ <core uarch="amd386"></core>
+ <basehz>40</basehz>
+ <tdp>3.03</tdp>
+ <die>
+  <process>1500</process>
+  <package>132PQFP</package>
+ </die>
+</processor>
+
+</codename>

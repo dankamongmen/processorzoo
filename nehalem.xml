@@ -9,10 +9,12 @@
   <l>3</l>
   <b>24e6</b>
  </cache>
- <bus>
-  <interface>qpi</interface>
+ <bus type="qpi">
   <x>4</x>
-  <baset>6.4e9</baset>
+  <clock>
+   <basehz>3.2e9</basehz>
+   <mult>2</mult>
+  </clock>
  </bus>
  <product>xeon</product>
  <die socket="lga 1567"/>
@@ -26,10 +28,12 @@
   <l>3</l>
   <b>24e6</b>
  </cache>
- <bus>
-  <interface>qpi</interface>
+ <bus type="qpi">
   <x>4</x>
-  <baset>6.4e9</baset>
+  <clock>
+   <basehz>3.2e9</basehz>
+   <mult>2</mult>
+  </clock>
  </bus>
  <product>xeon</product>
  <die socket="lga 1567"/>
