@@ -2,14 +2,24 @@
  xmlns="http://relaxng.org/ns/structure/1.0">
 
  <start>
+	<choice>
+		<ref name="codename"/>
+		<element name="processorzoo">
+			<oneOrMore>
+				<ref name="codename"/>
+			</oneOrMore>
+		</element>
+	</choice>
+ </start>
+
+ <define name="codename">
 	<element name="codename">
 		<attribute name="name"><data type="string"/></attribute>
 		<oneOrMore>
 			<ref name="processor"/>
 		</oneOrMore>
 	</element>
-
- </start>
+ </define>
 
 <!-- Ideally, the CPU string as reported by CPUID (though
 	this is, apparently, BIOS-programmed?) or a SKU name. -->
