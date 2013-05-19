@@ -1,0 +1,42 @@
+<uarchfam name="p4">
+<uarch name="willamette">
+	<smt>1</smt>
+	<isa name="i686"/>
+</uarch>
+
+<uarch name="northwood">
+	<smt>1</smt>
+	<isa name="i686"/>
+</uarch>
+
+<uarch name="prescott">
+	<smt>2</smt>
+	<isa name="i686"/>
+</uarch>
+
+<uarch name="northwood-ht">
+	<smt>2</smt>
+	<isa name="i686"/>
+</uarch>
+
+<uarch name="prescott-ht">
+	<smt>2</smt>
+	<isa name="i686"/>
+</uarch>
+
+<uarch name="prescott-2m">
+	<smt>2</smt>
+	<isa name="i686"/>
+</uarch>
+
+<uarch name="cedar mill">
+	<smt>2</smt>
+	<isa name="i686"/>
+	<isa name="x86-64"/>
+</uarch>
+
+<uarch name="gallatin">
+	<smt>2</smt>
+	<isa name="i686"/>
+</uarch>
+</uarchfam>
