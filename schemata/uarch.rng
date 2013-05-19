@@ -1,6 +1,8 @@
 <grammar datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
  xmlns="http://relaxng.org/ns/structure/1.0">
 
+ <include href="../generated/isas.rng"/>
+
  <start>
 	<choice>
 
@@ -18,17 +20,18 @@
 
 	<define name="uarch">
 	<element name="uarch">
-	<attribute name="name"><data type="string"/></attribute>
-	<interleave>
-		<optional><element name="smt"><data type="integer"/></element></optional>
+		<attribute name="name"><data type="string"/></attribute>
+		<interleave>
+			<optional><element name="smt"><data type="integer"/></element></optional>
 
-<!-- We should probably define the ISA objects FIXME -->
-		<oneOrMore>
-			<element name="isa">
-				<attribute name="name"><data type="string"/></attribute>
-			</element>
-		</oneOrMore>
-	</interleave>
+			<oneOrMore>
+				<element name="isa">
+					<attribute name="name">
+						<ref name="isas"/>
+					</attribute>
+				</element>
+			</oneOrMore>
+		</interleave>
 	</element>
 	</define>
 
