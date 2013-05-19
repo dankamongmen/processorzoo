@@ -19,7 +19,7 @@ validatexml: $(UARCHRNG) $(RELAXNG) $(XML) $(LISTS)
 	for i in $(UARCHXML) ; do xmlstarlet val -e -r $(UARCHRNG) $$i || exit 1 ; done
 
 generated/%.html: xslt/%.xslt generated/%.xml
-	xsltproc --stringparam time "$(shell date -R)" -o $@ $^
+	xsltproc --stringparam time "$(shell date)" -o $@ $^
 
 generated/processorzoo.xml: $(MAKEFILE) $(XML)
 	echo '<?xml version="1.0"?>' > $@ && \

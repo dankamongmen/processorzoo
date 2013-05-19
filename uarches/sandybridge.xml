@@ -1,4 +1,4 @@
-<uarchfam name="sandybridge">
+<uarchfam name="sandy bridge">
 <uarch name="sandybridge-i7">
 	<isa name="x86-64"/>
 </uarch>

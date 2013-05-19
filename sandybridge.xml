@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<codename name="sandy bridge">
+<codename name="core">
 <processor name="i7-2600K">
 	<core uarch="sandybridge-i7"><x>4</x></core>
 	<basehz>3.4e9</basehz>

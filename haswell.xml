@@ -1,4 +1,4 @@
-<codename name="haswell">
+<codename name="core">
 <processor name="i7-4770K">
  <core uarch="haswell-i7"><x>4</x></core>
  <basehz>3.5e9</basehz>
