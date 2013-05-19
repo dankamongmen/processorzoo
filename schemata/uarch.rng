@@ -4,7 +4,7 @@
  <include href="../generated/isas.rng"/>
 
  <start>
-	<choice>
+	<!--<choice>-->
 
 	<element name="uarchfam">
 		<attribute name="name"><data type="string"/></attribute>
@@ -13,9 +13,9 @@
 		</oneOrMore>
 	</element>
 
-	<ref name="uarch"/>
+	<!--<ref name="uarch"/>
 
-	</choice>
+	</choice>-->
  </start>
 
 	<define name="uarch">

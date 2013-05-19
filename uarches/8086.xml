@@ -1,3 +1,5 @@
+<uarchfam name="8086">
 <uarch name="8086">
 	<isa name="IA16"/>
 </uarch>
+</uarchfam>

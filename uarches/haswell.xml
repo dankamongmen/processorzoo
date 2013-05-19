@@ -1,3 +1,5 @@
+<uarchfam name="haswell">
 <uarch name="haswell-i7">
 	<isa name="x86-64"/>
 </uarch>
+</uarchfam>
