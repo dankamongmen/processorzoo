@@ -1,0 +1,3 @@
+<uarch name="8086">
+	<isa name="IA16"/>
+</uarch>

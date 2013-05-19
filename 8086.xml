@@ -1,0 +1,37 @@
+<codename name="8086">
+<processor name="C8086">
+ <core uarch="8086"></core>
+ <basehz>5</basehz>
+ <tdp>1.87</tdp>
+ <die>
+  <tech>HMOS</tech>
+  <process>3000</process>
+  <package>40DIP ceramic</package>
+  <transistors>29e3</transistors>
+ </die>
+ <bus type="fsb">
+  <b>2</b>
+  <clock>
+   <basehz>20</basehz>
+  </clock>
+ </bus>
+</processor>
+<processor name="D8086-2">
+ <core uarch="8086"></core>
+ <basehz>8</basehz>
+ <tdp>1.84</tdp>
+ <die>
+  <tech>HMOS</tech>
+  <process>3000</process>
+  <package>40DIP ceramic</package>
+  <transistors>29e3</transistors>
+ </die>
+ <bus type="fsb">
+  <b>2</b>
+  <clock>
+   <basehz>25</basehz>
+  </clock>
+ </bus>
+</processor>
+
+</codename>
