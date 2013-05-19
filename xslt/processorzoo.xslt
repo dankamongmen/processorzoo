@@ -13,17 +13,24 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		<title>The Processor Zoo</title>
 	</head>
 	<body>
-		<table>
+		<table border="1">
 			<tr>
+				<th>Codename</th>
 				<th>Model</th>
 				<th>&mu;architecture</th>
 			</tr>
-<xsl:for-each select="//processor">
-	<xsl:sort select="@name" />
-	<tr>
-		<td><xsl:value-of select="@name"/></td>
-		<td><xsl:value-of select="uname/@name"/></td>
-	</tr>
+<xsl:for-each select="//codename/processor">
+<xsl:sort select="../@name" />
+<tr>
+	<td>
+		<!--<xsl:attribute name="rowspan">
+			<xsl:value-of select="count(/processor)"/>
+		</xsl:attribute>-->
+		<xsl:value-of select="../@name"/>
+	</td>
+	<td><xsl:value-of select="@name"/></td>
+	<td><xsl:value-of select="core/@uarch"/></td>
+</tr>
 </xsl:for-each>
 		</table>
 	</body>
