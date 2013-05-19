@@ -1,8 +1,8 @@
 .DELETE_ON_ERROR:
 .PHONY: all validate clean
 
-UARCHRNG:=uarch.rng
-RELAXNG:=processorzoo.rng
+UARCHRNG:=schemata/uarch.rng
+RELAXNG:=schemata/processorzoo.rng
 XML:=$(wildcard *.xml)
 LISTS:=$(addprefix generated/,uarches.rng)
 UARCHXML:=$(wildcard uarches/*.xml)

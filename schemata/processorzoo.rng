@@ -81,7 +81,7 @@
 </element>
 </define>
 
- <include href="generated/uarches.rng"/>
+ <include href="../generated/uarches.rng"/>
 
  <define name="core">
   <element name="core">
