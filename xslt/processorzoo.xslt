@@ -48,8 +48,8 @@ _gaq.push(['_trackPageview']);
 		<h3><a href="https://nick-black.com">nick black</a> presents&hellip;</h3>
 		<center><h1>THE PROCESSOR ZOO</h1></center>
 		<div class="main">
-The Processor Zoo aims to be as complete and thorough as possible an Open
-Source <a href="http://www.w3.org/XML/Core/#Publications">XML</a>
+The Processor Zoo aims to be as complete and thorough as possible an open
+source <a href="http://www.w3.org/XML/Core/#Publications">XML</a>
 database of microprocessors. It also contains
 <a href="http://relaxng.org/#specs">RELAX-NG</a> schemata for validating
 the input, <a href="http://www.w3.org/TR/xpath/">XPATH1</a> tools for querying
