@@ -19,12 +19,12 @@
 			table { background: #000; }
 			tr { background: #fff; }
 			th { background: #ccc; }
-			.blogrec { margin: auto; text-align: right; }
 			.coda { float: right; text-align: right;}
 			.license { float: left; }
 			.family { text-transform: capitalize; }
 			.main { text-align: justify; }
 			.run { font-weight: bold; }
+			.g-plusone { float: left; }
 			a.uarchlink:link {color: darkgreen;}
 			a.uarchlink:visited {color: darkgreen;}
 		</style>
@@ -75,7 +75,7 @@ po.src = 'https://apis.google.com/js/plusone.js';
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 })();
       </script>
-      <fb:like href="http://nick-black.com/processorzoo.html" send="false" width="450" show_faces="false" colorscheme="dark" font="verdana"></fb:like>
+      <fb:like style="float: left;" href="http://nick-black.com/processorzoo.html" send="false" width="450" show_faces="false" font="verdana"></fb:like>
       <div id="fb-root"></div>
       <script>
 (function(d, s, id) {
@@ -87,7 +87,8 @@ fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 	</script>
 
-     </div>
+	</div>
+	<br/>
 		<br/>
 		<table border="1">
 			<tr><td class="run" colspan="6" bgcolor="lightblue">the processors</td></tr>
