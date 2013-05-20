@@ -96,6 +96,7 @@ fjs.parentNode.insertBefore(js, fjs);
 	</script>
 
 	</div>
+	<br/>
 		<div class="coda">
 		Generated with
 		<a href="https://github.com/dankamongmen/processorzoo/raw/master/xslt/processorzoo.xslt">processorzoo.xslt</a>
