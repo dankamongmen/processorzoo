@@ -6,7 +6,7 @@
  <die>
   <tech>HMOS</tech>
   <process>3000</process>
-  <package>40DIP ceramic</package>
+  <package>40DIP</package>
   <transistors>29e3</transistors>
  </die>
  <bus type="fsb">
@@ -23,7 +23,7 @@
  <die>
   <tech>HMOS</tech>
   <process>3000</process>
-  <package>40DIP ceramic</package>
+  <package>40DIP</package>
   <transistors>29e3</transistors>
  </die>
  <bus type="fsb">

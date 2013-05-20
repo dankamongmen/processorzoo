@@ -1,4 +1,17 @@
 <codename name="i386">
+<processor name="Am386 SX-20">
+ <core uarch="amd386"></core>
+ <basehz>20</basehz>
+ <die>
+  <package>100PQFP</package>
+ </die>
+ <bus type="fsb">
+  <b>2</b>
+  <clock>
+   <basehz>20</basehz>
+  </clock>
+ </bus>
+</processor>
 <processor name="Am386 DX-20">
  <core uarch="amd386"></core>
  <basehz>20</basehz>
@@ -14,7 +27,20 @@
   </clock>
  </bus>
 </processor>
-<processor name="Am386 DX-25">
+<processor name="Am386 SX/SXL-25">
+ <core uarch="amd386"></core>
+ <basehz>25</basehz>
+ <die>
+  <package>100PQFP</package>
+ </die>
+ <bus type="fsb">
+  <b>2</b>
+  <clock>
+   <basehz>25</basehz>
+  </clock>
+ </bus>
+</processor>
+<processor name="Am386 DX/DXL-25">
  <core uarch="amd386"></core>
  <basehz>25</basehz>
  <tdp>1.31</tdp>
@@ -29,7 +55,20 @@
   </clock>
  </bus>
 </processor>
-<processor name="Am386 DX-33">
+<processor name="Am386 SX/SXL-33">
+ <core uarch="amd386"></core>
+ <basehz>33</basehz>
+ <die>
+  <package>100PQFP</package>
+ </die>
+ <bus type="fsb">
+  <b>2</b>
+  <clock>
+   <basehz>33</basehz>
+  </clock>
+ </bus>
+</processor>
+<processor name="Am386 DX/DXL-33">
  <core uarch="amd386"></core>
  <basehz>33</basehz>
  <tdp>1.73</tdp>
@@ -44,7 +83,7 @@
   </clock>
  </bus>
 </processor>
-<processor name="Am386 DX-40">
+<processor name="Am386 DX/DXL-40">
  <core uarch="amd386"></core>
  <basehz>40</basehz>
  <tdp>2.10</tdp>
@@ -54,6 +93,19 @@
  </die>
  <bus type="fsb">
   <b>4</b>
+  <clock>
+   <basehz>40</basehz>
+  </clock>
+ </bus>
+</processor>
+<processor name="Am386 SX-40">
+ <core uarch="amd386"></core>
+ <basehz>40</basehz>
+ <die>
+  <package>100PQFP</package>
+ </die>
+ <bus type="fsb">
+  <b>2</b>
   <clock>
    <basehz>40</basehz>
   </clock>
