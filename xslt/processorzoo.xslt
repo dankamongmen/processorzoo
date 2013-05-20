@@ -19,6 +19,7 @@
 			table { background: #000; }
 			tr { background: #fff; }
 			th { background: #ccc; }
+			.blogrec { margin: auto; }
 			.coda { float: right; text-align: right;}
 			.license { float: left; }
 			.family { text-transform: capitalize; }
@@ -62,6 +63,19 @@ and corrections or new data can be provided via pull requests.
 Alternatively, send <a href="mailto:dank@qemfd.net">me</a>
 patches against the current git tree.
 		</div>
+     <div class="blogrec">
+      <div class="g-plusone" data-annotation="inline"></div>
+      <script type="text/javascript">
+<!--
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+po.src = 'https://apis.google.com/js/plusone.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+-->
+      </script>
+      <fb:like href="http://www.sprezzatech.com/blog/0018-sprezzos-weekly-news-v1-i6.html" send="false" width="450" show_faces="false" colorscheme="dark" font="verdana"></fb:like>
+     </div>
 		<br/>
 		<table border="1">
 			<tr><td class="run" colspan="6" bgcolor="lightblue">the processors</td></tr>
