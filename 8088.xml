@@ -1,0 +1,61 @@
+<codename name="8088">
+<processor name="8088">
+ <core uarch="8088"></core>
+ <basehz>5</basehz>
+ <addrbits>20</addrbits>
+ <logaddr>16</logaddr>
+ <die>
+  <tech>HMOS-II</tech>
+  <process>3200</process>
+  <package>40CERDIP</package>
+  <transistors>29e3</transistors>
+  <volts>5</volts>
+ </die>
+ <bus type="biu">
+  <b>1</b>
+  <clock>
+   <basehz>5</basehz>
+  </clock>
+ </bus>
+</processor>
+<processor name="8088-2">
+ <core uarch="8088"></core>
+ <basehz>8</basehz>
+ <addrbits>20</addrbits>
+ <logaddr>16</logaddr>
+ <die>
+  <tech>HMOS-III</tech>
+  <process>3200</process>
+  <package>40CERDIP</package>
+  <transistors>29e3</transistors>
+  <volts>5</volts>
+ </die>
+ <bus type="biu">
+  <b>1</b>
+  <clock>
+   <basehz>8</basehz>
+  </clock>
+ </bus>
+</processor>
+<processor name="80C88">
+ <core uarch="8088"></core>
+ <basehz>8</basehz>
+ <addrbits>20</addrbits>
+ <logaddr>16</logaddr>
+ <die>
+  <tech>Scaled SAJI IV CHMOS</tech>
+  <process>3200</process>
+  <package>40CERDIP</package>
+  <transistors>29e3</transistors>
+  <volts>5</volts>
+ </die>
+ <bus type="biu">
+  <b>1</b>
+  <clock>
+   <basehz>8</basehz>
+  </clock>
+ </bus>
+</processor>
+
+
+</codename>

@@ -10,4 +10,15 @@
 	<storebufs>0</storebufs>
 	<loadbufs>0</loadbufs>
 </uarch>
+<uarch name="8088">
+	<isa name="IA16"/>
+ 	<pipeline>2</pipeline>
+	<peakissue>1</peakissue>
+	<peakret>1</peakret>
+	<rob>0</rob>
+	<stations>0</stations>
+	<lfbs>0</lfbs>
+	<storebufs>0</storebufs>
+	<loadbufs>0</loadbufs>
+</uarch>
 </uarchfam>
