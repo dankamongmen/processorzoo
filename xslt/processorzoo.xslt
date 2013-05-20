@@ -151,7 +151,9 @@ fjs.parentNode.insertBefore(js, fjs);
 			<xsl:when test="clock/mult"><xsl:value-of select="clock/mult"/>x</xsl:when>
 		</xsl:choose>
 		<xsl:choose>
-			<xsl:when test="clock/basehz"><xsl:value-of select="clock/basehz"/>Hz</xsl:when>
+			<xsl:when test="clock/basehz">
+				<xsl:value-of select='format-number(clock/basehz, "#")' />Hz
+			</xsl:when>
 		</xsl:choose>
 	</xsl:for-each>
 	</td>
