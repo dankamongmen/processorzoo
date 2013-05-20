@@ -98,7 +98,7 @@ fjs.parentNode.insertBefore(js, fjs);
 	<br/>
 		<br/>
 		<table border="1">
-			<tr><td class="run" colspan="9" bgcolor="lightblue">the processors</td></tr>
+			<tr><td class="run" colspan="10" bgcolor="lightblue">the processors</td></tr>
 			<tr>
 				<th class="family">Family</th>
 				<th>Model</th>
@@ -107,6 +107,7 @@ fjs.parentNode.insertBefore(js, fjs);
 				<th>Max TDP (W)</th>
 				<th>Die (mm&sup2;)</th>
 				<th>Package(s)</th>
+				<th>Voltage</th>
 				<th>Cache(s)</th>
 				<th>Bus(es)</th>
 			</tr>
@@ -131,6 +132,7 @@ fjs.parentNode.insertBefore(js, fjs);
 	<td><xsl:value-of select="tdp"/></td>
 	<td><xsl:value-of select="die/area"/></td>
 	<td><xsl:value-of select="die/package"/></td>
+	<td><xsl:value-of select="die/volts"/></td>
 	<td>
 	<xsl:for-each select="cache">
 		<xsl:sort select="l" />
@@ -140,6 +142,9 @@ fjs.parentNode.insertBefore(js, fjs);
 	<td>
 	<xsl:for-each select="bus">
 		<xsl:sort select="@type" />
+		<xsl:choose>
+			<xsl:when test="b"><xsl:value-of select="b * 8"/>b </xsl:when>
+		</xsl:choose>
 		<span class="bus"><xsl:value-of select="@type"/></span>
 		<xsl:choose>
 			<xsl:when test="x">x<xsl:value-of select="x"/></xsl:when>
@@ -159,7 +164,7 @@ fjs.parentNode.insertBefore(js, fjs);
 	</td>
 </tr>
 </xsl:for-each>
-			<tr><td class="run" colspan="9" bgcolor="lightgreen">the &mu;architectures</td></tr>
+			<tr><td class="run" colspan="10" bgcolor="lightgreen">the &mu;architectures</td></tr>
 			<tr>
 				<th class="family">Family</th>
 				<th>Codename</th>
@@ -170,6 +175,7 @@ fjs.parentNode.insertBefore(js, fjs);
 				<th>Pipeline(s)</th>
 				<th>Peak issue</th>
 				<th>ROB entries</th>
+				<th>Phys. Regs</th>
 			</tr>
 <xsl:for-each select="//uarchfam/uarch">
 <xsl:sort select="../@name" />
@@ -203,6 +209,7 @@ fjs.parentNode.insertBefore(js, fjs);
 		L<xsl:value-of select="l"/> (<xsl:value-of select="b"/>B)
 	</xsl:for-each>
 	</td>
+	<td></td>
 	<td></td>
 	<td></td>
 	<td></td>
