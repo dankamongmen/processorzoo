@@ -2,5 +2,11 @@
 <uarch name="haswell-i7">
 	<isa name="x86-64"/>
 	<isa name="i686"/>
+	<loadbufs>72</loadbufs>
+	<storebufs>42</storebufs>
+	<lfbs>10</lfbs>
+	<stations>60</stations>
+	<rob>192</rob>
+	<physregs>336</physregs>
 </uarch>
 </uarchfam>
