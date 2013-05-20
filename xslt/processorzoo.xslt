@@ -98,7 +98,7 @@ fjs.parentNode.insertBefore(js, fjs);
 	<br/>
 		<br/>
 		<table border="1">
-			<tr><td class="run" colspan="11" bgcolor="lightblue">the processors</td></tr>
+			<tr><td class="run" colspan="12" bgcolor="lightblue">the processors</td></tr>
 			<tr>
 				<th class="family">Family</th>
 				<th>Model</th>
@@ -106,6 +106,7 @@ fjs.parentNode.insertBefore(js, fjs);
 				<th>Base ALU (Hz)</th>
 				<th>Max TDP (W)</th>
 				<th>Die (mm&sup2;)</th>
+				<th>Technology</th>
 				<th>Transistors</th>
 				<th>Package(s)</th>
 				<th>Voltage</th>
@@ -132,6 +133,7 @@ fjs.parentNode.insertBefore(js, fjs);
 	<td><xsl:value-of select='format-number(basehz, "#")' /></td>
 	<td><xsl:value-of select="tdp"/></td>
 	<td><xsl:value-of select="die/area"/></td>
+	<td><xsl:value-of select="die/tech"/></td>
 	<td>
 		<xsl:choose>
 			<xsl:when test="die/transistors"><xsl:value-of select='format-number(die/transistors,"#")'/></xsl:when>
@@ -170,7 +172,7 @@ fjs.parentNode.insertBefore(js, fjs);
 	</td>
 </tr>
 </xsl:for-each>
-			<tr><td class="run" colspan="11" bgcolor="lightgreen">the &mu;architectures</td></tr>
+			<tr><td class="run" colspan="12" bgcolor="lightgreen">the &mu;architectures</td></tr>
 			<tr>
 				<th class="family">Family</th>
 				<th>Codename</th>
@@ -180,6 +182,7 @@ fjs.parentNode.insertBefore(js, fjs);
 				<th>TLB(s)</th>
 				<th>Pipeline(s)</th>
 				<th>Peak issue</th>
+				<th>Peak retire</th>
 				<th>ROB entries</th>
 				<th>Phys. Regs</th>
 				<th>Reservations</th>
@@ -216,6 +219,7 @@ fjs.parentNode.insertBefore(js, fjs);
 		L<xsl:value-of select="l"/> (<xsl:value-of select="b"/>B)
 	</xsl:for-each>
 	</td>
+	<td></td>
 	<td></td>
 	<td></td>
 	<td></td>
