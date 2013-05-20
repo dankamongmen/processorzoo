@@ -184,7 +184,7 @@ fjs.parentNode.insertBefore(js, fjs);
 				<th>ISA(s)</th>
 				<th>Cache(s)</th>
 				<th>TLB(s)</th>
-				<th>BMD(s)</th>
+				<th>Pipeline(s)</th>
 				<th>Peak issue</th>
 				<th>Peak retire</th>
 				<th>ROB entries</th>
@@ -229,7 +229,7 @@ fjs.parentNode.insertBefore(js, fjs);
 		<!-- handle TLBS fixme -->
 	</td>
 	<td>
-		<xsl:value-of select="bmd"/>
+		<xsl:value-of select="pipeline"/>
 	</td>
 	<td>
 		<xsl:value-of select="peakissue"/>

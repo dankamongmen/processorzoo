@@ -23,7 +23,7 @@
 		<attribute name="name"><data type="string"/></attribute>
 		<interleave>
 			<optional><element name="smt"><data type="integer"/></element></optional>
-
+			<optional><element name="pipeline"><data type="integer"/></element></optional>
 			<oneOrMore>
 				<element name="isa">
 					<attribute name="name">

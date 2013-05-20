@@ -6,7 +6,8 @@
  <addrbits>20</addrbits>
  <die>
   <tech>HMOS</tech>
-  <process>3000</process>
+  <area>33</area>
+  <process>3200</process>
   <package>40DIP</package>
   <transistors>29e3</transistors>
  </die>
