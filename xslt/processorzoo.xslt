@@ -19,7 +19,6 @@
 			table { background: #000; }
 			tr { background: #fff; }
 			th { background: #ccc; }
-			.coda { float: right; text-align: right;}
 			.license { float: left; }
 			.bus { text-transform: uppercase; }
 			.family { text-transform: capitalize; }
@@ -208,13 +207,14 @@ fjs.parentNode.insertBefore(js, fjs);
 </xsl:for-each>
 		</table>
 		<hr/>
+		<div class="license">
+			<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/us/88x31.png" /></a><br/><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">The Processor Zoo</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Nick Black</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 United States License</a>.
+		</div>
+		<br/>
 		<div class="coda">
 		Generated with
 		<a href="https://github.com/dankamongmen/processorzoo/raw/master/xslt/processorzoo.xslt">processorzoo.xslt</a>
-		at <xsl:value-of select="$time"/>. Copyright &copy; 2013 Nick Black.
-		</div>
-		<div class="license">
-			<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/us/88x31.png" /></a><br/><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">The Processor Zoo</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Nick Black</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 United States License</a>.
+		at <xsl:value-of select="$time"/>. Copyright &copy; 2013 Nick Black.<br/>
 		</div>
 	</body>
 </html>
