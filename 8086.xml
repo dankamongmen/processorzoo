@@ -29,7 +29,7 @@
  <die>
   <tech>HMOS-III</tech>
   <area>33</area>
-  <process>3000</process>
+  <process>3200</process>
   <package>40DIP</package>
   <transistors>29e3</transistors>
   <volts>5</volts>
@@ -50,7 +50,7 @@
  <die>
   <tech>HMOS-III</tech>
   <area>33</area>
-  <process>3000</process>
+  <process>3200</process>
   <package>40DIP</package>
   <transistors>29e3</transistors>
   <volts>5</volts>
