@@ -11,6 +11,7 @@
   <process>3200</process>
   <package>40DIP</package>
   <transistors>29e3</transistors>
+  <volts>5</volts>
  </die>
  <bus type="biu">
   <b>2</b>
@@ -31,6 +32,7 @@
   <process>3000</process>
   <package>40DIP</package>
   <transistors>29e3</transistors>
+  <volts>5</volts>
  </die>
  <bus type="biu">
   <b>2</b>
@@ -51,6 +53,7 @@
   <process>3000</process>
   <package>40DIP</package>
   <transistors>29e3</transistors>
+  <volts>5</volts>
  </die>
  <bus type="biu">
   <b>2</b>
