@@ -4,17 +4,18 @@
  <basehz>5</basehz>
  <tdp>1.87</tdp>
  <addrbits>20</addrbits>
+ <logaddr>16</logaddr>
  <die>
-  <tech>HMOS</tech>
+  <tech>HMOS-III</tech>
   <area>33</area>
   <process>3200</process>
   <package>40DIP</package>
   <transistors>29e3</transistors>
  </die>
- <bus type="fsb">
+ <bus type="biu">
   <b>2</b>
   <clock>
-   <basehz>20</basehz>
+   <basehz>5</basehz>
   </clock>
  </bus>
 </processor>
@@ -22,18 +23,40 @@
  <core uarch="8086"></core>
  <basehz>8</basehz>
  <tdp>1.84</tdp>
+ <addrbits>20</addrbits>
+ <logaddr>16</logaddr>
  <die>
-  <tech>HMOS</tech>
+  <tech>HMOS-III</tech>
   <process>3000</process>
   <package>40DIP</package>
   <transistors>29e3</transistors>
  </die>
- <bus type="fsb">
+ <bus type="biu">
   <b>2</b>
   <clock>
-   <basehz>25</basehz>
+   <basehz>8</basehz>
   </clock>
  </bus>
 </processor>
+<processor name="D8086-1">
+ <core uarch="8086"></core>
+ <basehz>10</basehz>
+ <tdp>1.84</tdp>
+ <addrbits>20</addrbits>
+ <logaddr>16</logaddr>
+ <die>
+  <tech>HMOS-III</tech>
+  <process>3000</process>
+  <package>40DIP</package>
+  <transistors>29e3</transistors>
+ </die>
+ <bus type="biu">
+  <b>2</b>
+  <clock>
+   <basehz>10</basehz>
+  </clock>
+ </bus>
+</processor>
+
 
 </codename>
