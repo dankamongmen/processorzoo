@@ -13,7 +13,7 @@
 	<head>
 		<title>The Processor Zoo</title>
 		<style type="text/css" media="screen">
-			html { color: #000; background: #fff; max-width: 800px; }
+			html { color: #000; background: #fff; }
 			a:link { color: royalpurple; }
 			a:visited { color: darkgreen; }
 			table { background: #000; }
@@ -21,8 +21,9 @@
 			th { background: #ccc; }
 			.coda { float: right; text-align: right;}
 			.license { float: left; }
+			.bus { text-transform: uppercase; }
 			.family { text-transform: capitalize; }
-			.main { text-align: justify; }
+			.main { text-align: justify; max-width: 800px; }
 			.run { font-weight: bold; }
 			.g-plusone { float: left; }
 			a.uarchlink:link {color: darkgreen;}
@@ -45,6 +46,7 @@ _gaq.push(['_trackPageview']);
 		</script>
 	</head>
 	<body>
+		<div class="main">
 		<h3><a href="https://nick-black.com">nick black</a> presents&hellip;</h3>
 		<center><h1>THE PROCESSOR ZOO</h1></center>
 		<div class="bigcount">
@@ -55,7 +57,6 @@ _gaq.push(['_trackPageview']);
 		</b></center>
 		</div>
 		<br/>
-		<div class="main">
 The Processor Zoo aims to be as complete and thorough as possible an open
 source <a href="http://www.w3.org/XML/Core/#Publications">XML</a>
 database of microprocessors. It also contains
@@ -99,7 +100,7 @@ fjs.parentNode.insertBefore(js, fjs);
 	<br/>
 		<br/>
 		<table border="1">
-			<tr><td class="run" colspan="7" bgcolor="lightblue">the processors</td></tr>
+			<tr><td class="run" colspan="8" bgcolor="lightblue">the processors</td></tr>
 			<tr>
 				<th class="family">Family</th>
 				<th>Model</th>
@@ -108,6 +109,7 @@ fjs.parentNode.insertBefore(js, fjs);
 				<th>Max TDP (W)</th>
 				<th>Die (mm&sup2;)</th>
 				<th>Cache(s)</th>
+				<th>Bus(es)</th>
 			</tr>
 <xsl:for-each select="//codename/processor">
 <xsl:sort select="../@name" />
@@ -135,9 +137,27 @@ fjs.parentNode.insertBefore(js, fjs);
 		L<xsl:value-of select="l"/> (<xsl:value-of select="b"/>B)
 	</xsl:for-each>
 	</td>
+	<td>
+	<xsl:for-each select="bus">
+		<xsl:sort select="@type" />
+		<span class="bus"><xsl:value-of select="@type"/></span>
+		<xsl:choose>
+			<xsl:when test="x">x<xsl:value-of select="x"/></xsl:when>
+		</xsl:choose>
+		<xsl:choose>
+			<xsl:when test="clock"> @</xsl:when>
+		</xsl:choose>
+		<xsl:choose>
+			<xsl:when test="clock/mult"><xsl:value-of select="clock/mult"/>x</xsl:when>
+		</xsl:choose>
+		<xsl:choose>
+			<xsl:when test="clock/basehz"><xsl:value-of select="clock/basehz"/>Hz</xsl:when>
+		</xsl:choose>
+	</xsl:for-each>
+	</td>
 </tr>
 </xsl:for-each>
-			<tr><td class="run" colspan="7" bgcolor="lightgreen">the &mu;architectures</td></tr>
+			<tr><td class="run" colspan="8" bgcolor="lightgreen">the &mu;architectures</td></tr>
 			<tr>
 				<th class="family">Family</th>
 				<th>Codename</th>
@@ -146,6 +166,7 @@ fjs.parentNode.insertBefore(js, fjs);
 				<th>Cache(s)</th>
 				<th>TLB(s)</th>
 				<th>Pipeline(s)</th>
+				<th>Peak issue</th>
 			</tr>
 <xsl:for-each select="//uarchfam/uarch">
 <xsl:sort select="../@name" />
@@ -178,6 +199,7 @@ fjs.parentNode.insertBefore(js, fjs);
 		L<xsl:value-of select="l"/> (<xsl:value-of select="b"/>B)
 	</xsl:for-each>
 	</td>
+	<td></td>
 	<td></td>
 	<td></td>
 </tr>
