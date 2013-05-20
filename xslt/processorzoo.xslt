@@ -47,6 +47,14 @@ _gaq.push(['_trackPageview']);
 	<body>
 		<h3><a href="https://nick-black.com">nick black</a> presents&hellip;</h3>
 		<center><h1>THE PROCESSOR ZOO</h1></center>
+		<div class="bigcount">
+		<center><b>Currently showing <xsl:value-of select="count(//processor)"/>
+		processors and
+		<xsl:value-of select="count(//uarch)"/>
+		&mu;architectures.
+		</b></center>
+		</div>
+		<br/>
 		<div class="main">
 The Processor Zoo aims to be as complete and thorough as possible an open
 source <a href="http://www.w3.org/XML/Core/#Publications">XML</a>
