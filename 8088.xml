@@ -5,7 +5,7 @@
  <addrbits>20</addrbits>
  <logaddr>16</logaddr>
  <die>
-  <tech>HMOS-II</tech>
+  <tech>Enh. nMOS</tech>
   <process>3200</process>
   <package>40CERDIP</package>
   <transistors>29e3</transistors>
@@ -24,7 +24,7 @@
  <addrbits>20</addrbits>
  <logaddr>16</logaddr>
  <die>
-  <tech>HMOS-III</tech>
+  <tech>HMOS-II</tech>
   <process>3200</process>
   <package>40CERDIP</package>
   <transistors>29e3</transistors>
