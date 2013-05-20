@@ -2,5 +2,9 @@
 <uarch name="8086">
 	<isa name="IA16"/>
  	<pipeline>2</pipeline>
+	<peakissue>1</peakissue>
+	<peakret>1</peakret>
+	<rob>0</rob>
+	<stations>0</stations>
 </uarch>
 </uarchfam>
