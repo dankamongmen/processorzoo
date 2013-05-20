@@ -73,6 +73,7 @@ Alternatively, send <a href="mailto:dank@qemfd.net">me</a>
 patches against the current git tree. Please provide appropriate citations
 with data.
 		</div>
+		<br/>
      <div class="blogrec">
       <div class="g-plusone" data-annotation="inline"></div>
       <script type="text/javascript">
@@ -95,7 +96,6 @@ fjs.parentNode.insertBefore(js, fjs);
 	</script>
 
 	</div>
-	<br/>
 		<br/>
 		<table border="1">
 			<tr><td class="run" colspan="14" bgcolor="lightblue">the processors</td></tr>
