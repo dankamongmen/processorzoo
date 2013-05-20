@@ -106,8 +106,8 @@ fjs.parentNode.insertBefore(js, fjs);
 				<th>&mu;architecture</th>
 				<th>Base ALU (Hz)</th>
 				<th>Max TDP (W)</th>
-				<th>Cache(s)</th>
 				<th>Die (mm&sup2;)</th>
+				<th>Cache(s)</th>
 			</tr>
 <xsl:for-each select="//codename/processor">
 <xsl:sort select="../@name" />
