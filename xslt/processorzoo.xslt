@@ -99,13 +99,14 @@ fjs.parentNode.insertBefore(js, fjs);
 	<br/>
 		<br/>
 		<table border="1">
-			<tr><td class="run" colspan="6" bgcolor="lightblue">the processors</td></tr>
+			<tr><td class="run" colspan="7" bgcolor="lightblue">the processors</td></tr>
 			<tr>
 				<th class="family">Family</th>
 				<th>Model</th>
 				<th>&mu;architecture</th>
 				<th>Base ALU (Hz)</th>
 				<th>Max TDP (W)</th>
+				<th>Cache(s)</th>
 				<th>Die (mm&sup2;)</th>
 			</tr>
 <xsl:for-each select="//codename/processor">
@@ -128,9 +129,15 @@ fjs.parentNode.insertBefore(js, fjs);
 	<td><xsl:value-of select='format-number(basehz, "#")' /></td>
 	<td><xsl:value-of select="tdp"/></td>
 	<td><xsl:value-of select="die/area"/></td>
+	<td>
+	<xsl:for-each select="cache">
+		<xsl:sort select="l" />
+		L<xsl:value-of select="l"/> (<xsl:value-of select="b"/>B)
+	</xsl:for-each>
+	</td>
 </tr>
 </xsl:for-each>
-			<tr><td class="run" colspan="6" bgcolor="lightgreen">the &mu;architectures</td></tr>
+			<tr><td class="run" colspan="7" bgcolor="lightgreen">the &mu;architectures</td></tr>
 			<tr>
 				<th class="family">Family</th>
 				<th>Codename</th>
@@ -138,6 +145,7 @@ fjs.parentNode.insertBefore(js, fjs);
 				<th>ISA(s)</th>
 				<th>Cache(s)</th>
 				<th>TLB(s)</th>
+				<th>Pipeline(s)</th>
 			</tr>
 <xsl:for-each select="//uarchfam/uarch">
 <xsl:sort select="../@name" />
@@ -163,6 +171,12 @@ fjs.parentNode.insertBefore(js, fjs);
 		<xsl:otherwise/>
 	</xsl:choose>
 </xsl:for-each>
+	</td>
+	<td>
+	<xsl:for-each select="cache">
+		<xsl:sort select="l" />
+		L<xsl:value-of select="l"/> (<xsl:value-of select="b"/>B)
+	</xsl:for-each>
 	</td>
 	<td></td>
 	<td></td>
