@@ -187,6 +187,7 @@ fjs.parentNode.insertBefore(js, fjs);
 	</td>
 	<td>
 <xsl:for-each select="isa">
+	<xsl:sort select="@name"/>
 	<xsl:value-of select="@name"/>
 	<xsl:choose>
 		<xsl:when test="position() &lt; last()">, </xsl:when>
