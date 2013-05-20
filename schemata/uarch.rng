@@ -28,6 +28,9 @@
 			<optional><element name="pipeline"><data type="integer"/></element></optional>
 			<optional><element name="peakissue"><data type="integer"/></element></optional>
 			<optional><element name="peakret"><data type="integer"/></element></optional>
+			<optional><element name="lfbs"><data type="integer"/></element></optional>
+			<optional><element name="storebufs"><data type="integer"/></element></optional>
+			<optional><element name="loadbufs"><data type="integer"/></element></optional>
 			<oneOrMore>
 				<element name="isa">
 					<attribute name="name">

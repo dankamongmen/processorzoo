@@ -104,12 +104,13 @@ fjs.parentNode.insertBefore(js, fjs);
 		</div>
 		<br/>
 		<table border="1">
-			<tr><td class="run" colspan="14" bgcolor="lightblue">the processors</td></tr>
+			<tr><td class="run" colspan="15" bgcolor="lightblue">the processors</td></tr>
 			<tr>
 				<th class="family">Family</th>
 				<th>Model</th>
 				<th>&mu;architecture</th>
-				<th>Address bits</th>
+				<th>Phys. address bits</th>
+				<th>Log. address bits</th>
 				<th>Base ALU (Hz)</th>
 				<th>Max TDP (W)</th>
 				<th>Die (mm&sup2;)</th>
@@ -142,6 +143,7 @@ fjs.parentNode.insertBefore(js, fjs);
 		<xsl:value-of select="core/@uarch"/>
 	</a></td>
 	<td><xsl:value-of select="addrbits"/></td>
+	<td><xsl:value-of select="logaddr"/></td>
 	<td><xsl:value-of select='format-number(basehz, "#")' /></td>
 	<td><xsl:value-of select="tdp"/></td>
 	<td><xsl:value-of select="die/area"/></td>
@@ -185,7 +187,7 @@ fjs.parentNode.insertBefore(js, fjs);
 	</td>
 </tr>
 </xsl:for-each>
-			<tr><td class="run" colspan="14" bgcolor="lightgreen">the &mu;architectures</td></tr>
+			<tr><td class="run" colspan="15" bgcolor="lightgreen">the &mu;architectures</td></tr>
 			<tr>
 				<th class="family">Family</th>
 				<th>Codename</th>
@@ -201,6 +203,7 @@ fjs.parentNode.insertBefore(js, fjs);
 				<th>Reservations</th>
 				<th>Load bufs</th>
 				<th>Store bufs</th>
+				<th>LFBs</th>
 			</tr>
 <xsl:for-each select="//uarchfam/uarch">
 <xsl:sort select="../@name" />
@@ -260,6 +263,9 @@ fjs.parentNode.insertBefore(js, fjs);
 	</td>
 	<td>
 		<xsl:value-of select="storebufs"/>
+	</td>
+	<td>
+		<xsl:value-of select="lfbs"/>
 	</td>
 </tr>
 </xsl:for-each>

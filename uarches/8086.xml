@@ -6,5 +6,8 @@
 	<peakret>1</peakret>
 	<rob>0</rob>
 	<stations>0</stations>
+	<lfbs>0</lfbs>
+	<storebufs>0</storebufs>
+	<loadbufs>0</loadbufs>
 </uarch>
 </uarchfam>
