@@ -9,7 +9,7 @@
 <xsl:param name="time" select="'ARGH'"/>
 <xsl:output method="html" indent="yes"/>
 <xsl:template match="/">
-<html>
+<html lang="en" xml:lang="en" xmlns:fb="http://ogp.me/ns/fb#">
 	<head>
 		<title>The Processor Zoo</title>
 		<style type="text/css" media="screen">
@@ -19,7 +19,7 @@
 			table { background: #000; }
 			tr { background: #fff; }
 			th { background: #ccc; }
-			.blogrec { margin: auto; }
+			.blogrec { margin: auto; text-align: right; }
 			.coda { float: right; text-align: right;}
 			.license { float: left; }
 			.family { text-transform: capitalize; }
@@ -28,6 +28,8 @@
 			a.uarchlink:link {color: darkgreen;}
 			a.uarchlink:visited {color: darkgreen;}
 		</style>
+		<link rel="publisher" href="https://plus.google.com/118052647816244613292" />
+		<meta property="fb:admins" content="690107717" />
 		<script type="text/javascript">
 <!--
 var _gaq = _gaq || [];
@@ -63,18 +65,28 @@ and corrections or new data can be provided via pull requests.
 Alternatively, send <a href="mailto:dank@qemfd.net">me</a>
 patches against the current git tree.
 		</div>
+		<br/>
      <div class="blogrec">
       <div class="g-plusone" data-annotation="inline"></div>
       <script type="text/javascript">
-<!--
 (function() {
 var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
 po.src = 'https://apis.google.com/js/plusone.js';
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 })();
--->
       </script>
-      <fb:like href="http://www.sprezzatech.com/blog/0018-sprezzos-weekly-news-v1-i6.html" send="false" width="450" show_faces="false" colorscheme="dark" font="verdana"></fb:like>
+      <fb:like href="http://nick-black.com/processorzoo.html" send="false" width="450" show_faces="false" colorscheme="dark" font="verdana"></fb:like>
+      <div id="fb-root"></div>
+      <script>
+(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+	</script>
+
      </div>
 		<br/>
 		<table border="1">
