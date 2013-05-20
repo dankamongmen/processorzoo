@@ -58,6 +58,10 @@
 
 <!-- PHYSICAL DATA -->
 
+	<optional>
+		<element name="addrbits"><data type="integer"/></element>
+	</optional>
+
 	<optional> <!-- In watts, as specified on the processor datasheet. -->
 		<element name="tdp"><data type="float"/></element>
 	</optional>

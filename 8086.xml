@@ -3,6 +3,7 @@
  <core uarch="8086"></core>
  <basehz>5</basehz>
  <tdp>1.87</tdp>
+ <addrbits>20</addrbits>
  <die>
   <tech>HMOS</tech>
   <process>3000</process>

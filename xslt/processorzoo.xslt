@@ -70,9 +70,9 @@ The Processor Zoo is version controlled and archived at
 <a href="https://github.com/dankamongmen/processorzoo.git">GitHub</a>,
 and corrections or new data can be provided via pull requests.
 Alternatively, send <a href="mailto:dank@qemfd.net">me</a>
-patches against the current git tree.
+patches against the current git tree. Please provide appropriate citations
+with data.
 		</div>
-		<br/>
      <div class="blogrec">
       <div class="g-plusone" data-annotation="inline"></div>
       <script type="text/javascript">
@@ -98,14 +98,16 @@ fjs.parentNode.insertBefore(js, fjs);
 	<br/>
 		<br/>
 		<table border="1">
-			<tr><td class="run" colspan="12" bgcolor="lightblue">the processors</td></tr>
+			<tr><td class="run" colspan="14" bgcolor="lightblue">the processors</td></tr>
 			<tr>
 				<th class="family">Family</th>
 				<th>Model</th>
 				<th>&mu;architecture</th>
+				<th>Address bits</th>
 				<th>Base ALU (Hz)</th>
 				<th>Max TDP (W)</th>
 				<th>Die (mm&sup2;)</th>
+				<th>Max feature (nm)</th>
 				<th>Technology</th>
 				<th>Transistors</th>
 				<th>Package(s)</th>
@@ -130,9 +132,11 @@ fjs.parentNode.insertBefore(js, fjs);
 		</xsl:attribute>
 		<xsl:value-of select="core/@uarch"/>
 	</a></td>
+	<td><xsl:value-of select="addrbits"/></td>
 	<td><xsl:value-of select='format-number(basehz, "#")' /></td>
 	<td><xsl:value-of select="tdp"/></td>
 	<td><xsl:value-of select="die/area"/></td>
+	<td><xsl:value-of select="die/process"/></td>
 	<td><xsl:value-of select="die/tech"/></td>
 	<td>
 		<xsl:choose>
@@ -172,7 +176,7 @@ fjs.parentNode.insertBefore(js, fjs);
 	</td>
 </tr>
 </xsl:for-each>
-			<tr><td class="run" colspan="12" bgcolor="lightgreen">the &mu;architectures</td></tr>
+			<tr><td class="run" colspan="14" bgcolor="lightgreen">the &mu;architectures</td></tr>
 			<tr>
 				<th class="family">Family</th>
 				<th>Codename</th>
@@ -180,12 +184,14 @@ fjs.parentNode.insertBefore(js, fjs);
 				<th>ISA(s)</th>
 				<th>Cache(s)</th>
 				<th>TLB(s)</th>
-				<th>Pipeline(s)</th>
+				<th>BMD(s)</th>
 				<th>Peak issue</th>
 				<th>Peak retire</th>
 				<th>ROB entries</th>
 				<th>Phys. Regs</th>
 				<th>Reservations</th>
+				<th>Load bufs</th>
+				<th>Store bufs</th>
 			</tr>
 <xsl:for-each select="//uarchfam/uarch">
 <xsl:sort select="../@name" />
@@ -219,13 +225,33 @@ fjs.parentNode.insertBefore(js, fjs);
 		L<xsl:value-of select="l"/> (<xsl:value-of select="b"/>B)
 	</xsl:for-each>
 	</td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
+	<td>
+		<!-- handle TLBS fixme -->
+	</td>
+	<td>
+		<xsl:value-of select="bmd"/>
+	</td>
+	<td>
+		<xsl:value-of select="peakissue"/>
+	</td>
+	<td>
+		<xsl:value-of select="peakretire"/>
+	</td>
+	<td>
+		<xsl:value-of select="rob"/>
+	</td>
+	<td>
+		<xsl:value-of select="physregs"/>
+	</td>
+	<td>
+		<xsl:value-of select="reservations"/>
+	</td>
+	<td>
+		<xsl:value-of select="loadbufs"/>
+	</td>
+	<td>
+		<xsl:value-of select="storebufs"/>
+	</td>
 </tr>
 </xsl:for-each>
 		</table>
