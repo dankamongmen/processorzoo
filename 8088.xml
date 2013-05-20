@@ -5,7 +5,7 @@
  <addrbits>20</addrbits>
  <logaddr>16</logaddr>
  <die>
-  <tech>Enh. nMOS</tech>
+  <tech>nMOS</tech>
   <process>3200</process>
   <package>40CERDIP</package>
   <transistors>29e3</transistors>

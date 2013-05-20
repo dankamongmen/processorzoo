@@ -6,7 +6,7 @@
  <addrbits>20</addrbits>
  <logaddr>16</logaddr>
  <die>
-  <tech>HMOS-III</tech>
+  <tech>nMOS</tech>
   <area>33</area>
   <process>3200</process>
   <package>40DIP</package>
