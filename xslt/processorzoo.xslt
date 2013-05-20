@@ -124,6 +124,9 @@ fjs.parentNode.insertBefore(js, fjs);
 			<xsl:value-of select="count(/processor)"/>
 		</xsl:attribute>-->
 		<xsl:value-of select="../@name"/>
+		<xsl:choose>
+			<xsl:when test="product">&nbsp;<xsl:value-of select="product"/></xsl:when>
+		</xsl:choose>
 	</td>
 	<td><xsl:value-of select="@name"/></td>
 	<td><a class="uarchlink">
