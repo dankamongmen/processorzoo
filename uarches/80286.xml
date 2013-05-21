@@ -1,0 +1,5 @@
+<uarchfam name="80286">
+<uarch name="80286">
+	<isa name="i286"/>
+</uarch>
+</uarchfam>

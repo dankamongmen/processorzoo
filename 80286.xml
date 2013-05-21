@@ -1,0 +1,58 @@
+<codename name="Intel 80286">
+<processor name="80286-6">
+ <core uarch="80286"></core>
+ <basehz>6</basehz>
+ <tdp>3.3</tdp>
+ <addrbits>20</addrbits>
+ <logaddr>16</logaddr>
+ <die>
+  <tech>CHMOS II</tech>
+  <process>1500</process>
+  <transistors>134e3</transistors>
+ </die>
+ <bus type="biu">
+  <b>2</b>
+  <clock>
+   <basehz>6</basehz>
+  </clock>
+ </bus>
+</processor>
+<processor name="80286-10">
+ <core uarch="80286"></core>
+ <basehz>10</basehz>
+ <tdp>3.3</tdp>
+ <addrbits>20</addrbits>
+ <logaddr>16</logaddr>
+ <die>
+  <tech>CHMOS-II</tech>
+  <process>1500</process>
+  <transistors>134e3</transistors>
+ </die>
+ <bus type="biu">
+  <b>2</b>
+  <clock>
+   <basehz>10</basehz>
+  </clock>
+ </bus>
+</processor>
+<processor name="80286-12">
+ <core uarch="80286"></core>
+ <basehz>12</basehz>
+ <tdp>3.3</tdp>
+ <addrbits>20</addrbits>
+ <logaddr>16</logaddr>
+ <die>
+  <tech>CHMOS-II</tech>
+  <process>1500</process>
+  <transistors>134e3</transistors>
+ </die>
+ <bus type="biu">
+  <b>2</b>
+  <clock>
+   <basehz>12</basehz>
+  </clock>
+ </bus>
+</processor>
+
+
+</codename>
