@@ -1,7 +1,14 @@
 <uarchfam name="sandy bridge">
 <uarch name="sandybridge-i7">
 	<isa name="x86-64"/>
+	<isa name="i686"/>
 	<smt>2</smt>
+	<loadbufs>64</loadbufs>
+	<storebufs>36</storebufs>
+	<lfbs>10</lfbs>
+	<stations>54</stations>
+	<rob>168</rob>
+	<physregs>304</physregs>
 	<cache type="data">
 		<l>1</l>
 		<b>32e3</b>
@@ -22,6 +29,45 @@
 	</tlb>
 	<tlb type="code">
 		<l>1</l>
+		<page size="4e6" entries="16"/>
+		<page size="4e3" entries="128"/>
+	</tlb>
+	<tlb type="unified">
+		<l>2</l>
+		<page size="4e3" entries="512"/>
+	</tlb>
+</uarch>
+<uarch name="sandybridge-i5">
+	<isa name="x86-64"/>
+	<isa name="i686"/>
+	<smt>1</smt>
+	<loadbufs>64</loadbufs>
+	<storebufs>36</storebufs>
+	<lfbs>10</lfbs>
+	<stations>54</stations>
+	<rob>168</rob>
+	<physregs>304</physregs>
+	<cache type="data">
+		<l>1</l>
+		<b>32e3</b>
+	</cache>
+	<cache type="code">
+		<l>1</l>
+		<b>32e3</b>
+	</cache>
+	<cache type="unified">
+		<l>2</l>
+		<b>256e3</b>
+	</cache>
+	<tlb type="data">
+		<l>1</l>
+		<page size="4e3" entries="64"/>
+		<page size="4e6" entries="32"/>
+		<page size="1e9" entries="4"/>
+	</tlb>
+	<tlb type="code">
+		<l>1</l>
+		<page size="4e6" entries="8"/>
 		<page size="4e3" entries="128"/>
 	</tlb>
 	<tlb type="unified">

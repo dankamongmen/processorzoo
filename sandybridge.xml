@@ -1,10 +1,51 @@
 <?xml version="1.0"?>
 <codename name="core">
+<processor name="i7-2700K">
+	<core uarch="sandybridge-i7"><x>4</x></core>
+	<basehz>3.5e9</basehz>
+	<tdp>95</tdp>
+	<cache type="unified">
+		<l>3</l>
+		<b>8e6</b>
+	</cache>
+	<die>
+		<area>216</area>
+		<package>LGA1155</package>
+		<transistors>1.16e9</transistors>
+		<process>32</process>
+	</die>
+	<product>Core i7</product>
+</processor>
 <processor name="i7-2600K">
 	<core uarch="sandybridge-i7"><x>4</x></core>
 	<basehz>3.4e9</basehz>
 	<tdp>95</tdp>
+	<cache type="unified">
+		<l>3</l>
+		<b>8e6</b>
+	</cache>
 	<die>
+		<area>216</area>
+		<package>LGA1155</package>
+		<process>32</process>
+		<transistors>1.16e9</transistors>
 	</die>	
+	<product>Core i7</product>
+</processor>
+<processor name="i5-2500K">
+	<core uarch="sandybridge-i5"><x>4</x></core>
+	<basehz>3.3e9</basehz>
+	<tdp>95</tdp>
+	<cache type="unified">
+		<l>3</l>
+		<b>6e6</b>
+	</cache>
+	<die>
+		<process>32</process>
+		<area>216</area>
+		<package>LGA1155</package>
+		<transistors>1.16e9</transistors>
+	</die>	
+	<product>Core i5</product>
 </processor>
 </codename>
