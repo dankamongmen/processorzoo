@@ -25,6 +25,9 @@
 			<zeroOrMore>
 				<externalRef href="cache.rng"/>
 			</zeroOrMore>
+			<zeroOrMore>
+				<externalRef href="tlb.rng"/>
+			</zeroOrMore>
 			<optional><element name="smt"><data type="integer"/></element></optional>
 			<optional><element name="rob"><data type="integer"/></element></optional>
 			<optional><element name="stations"><data type="integer"/></element></optional>

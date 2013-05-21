@@ -12,9 +12,9 @@
 		</attribute>
 		<interleave>
 			<element name="l"><data type="integer"/></element>
-			<element name="entries"><data type="integer"/></element>
 			<oneOrMore>
 				<element name="page">
+					<attribute name="entries"><data type="integer"/></attribute>
 					<attribute name="size"><data type="float"/></attribute>
 				</element>
 			</oneOrMore>
