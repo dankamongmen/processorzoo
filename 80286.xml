@@ -3,8 +3,8 @@
  <core uarch="80286"></core>
  <basehz>6</basehz>
  <tdp>3.3</tdp>
- <addrbits>20</addrbits>
- <logaddr>16</logaddr>
+ <addrbits>24</addrbits>
+ <logaddr>30</logaddr>
  <die>
   <tech>CHMOS II</tech>
   <process>1500</process>
@@ -21,8 +21,8 @@
  <core uarch="80286"></core>
  <basehz>10</basehz>
  <tdp>3.3</tdp>
- <addrbits>20</addrbits>
- <logaddr>16</logaddr>
+ <addrbits>24</addrbits>
+ <logaddr>30</logaddr>
  <die>
   <tech>CHMOS-II</tech>
   <process>1500</process>
@@ -39,8 +39,8 @@
  <core uarch="80286"></core>
  <basehz>12</basehz>
  <tdp>3.3</tdp>
- <addrbits>20</addrbits>
- <logaddr>16</logaddr>
+ <addrbits>24</addrbits>
+ <logaddr>30</logaddr>
  <die>
   <tech>CHMOS-II</tech>
   <process>1500</process>
