@@ -18,6 +18,10 @@
   <b>4</b>
   <baset>40</baset>
  </bus>
+ <cache type="unified">
+  <l>1</l>
+  <b>8e3</b>
+ </cache>
 </processor>
 
 <processor name="Am486 DX2-50">
