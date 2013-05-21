@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<codename name="ivy bridge">
+<processor name="i7-3770K">
+	<core uarch="ivybridge-i7"><x>4</x></core>
+	<core uarch="hd4000"><x>12</x></core>
+	<basehz>3.5e9</basehz>
+	<tdp>77</tdp>
+	<cache type="unified">
+		<l>3</l>
+		<b>8e6</b>
+	</cache>
+	<die>
+		<area>160</area>
+		<package>LGA1155</package>
+		<tech>FinFET</tech>
+		<transistors>1.4e9</transistors>
+		<process>22</process>
+	</die>
+	<product>Core i7</product>
+</processor>
+<processor name="i7-3770">
+	<core uarch="ivybridge-i7"><x>4</x></core>
+	<core uarch="hd4000"><x>12</x></core>
+	<basehz>3.4e9</basehz>
+	<tdp>77</tdp>
+	<cache type="unified">
+		<l>3</l>
+		<b>8e6</b>
+	</cache>
+	<die>
+		<area>160</area>
+		<package>LGA1155</package>
+		<tech>FinFET</tech>
+		<transistors>1.4e9</transistors>
+		<process>22</process>
+	</die>
+	<product>Core i7</product>
+</processor>
+<processor name="i7-3770S">
+	<core uarch="ivybridge-i7"><x>4</x></core>
+	<core uarch="hd4000"><x>12</x></core>
+	<basehz>3.1e9</basehz>
+	<tdp>65</tdp>
+	<cache type="unified">
+		<l>3</l>
+		<b>8e6</b>
+	</cache>
+	<die>
+		<area>160</area>
+		<package>LGA1155</package>
+		<tech>FinFET</tech>
+		<process>22</process>
+		<transistors>1.4e9</transistors>
+	</die>	
+	<product>Core i7</product>
+</processor>
+<processor name="i7-3770T">
+	<core uarch="ivybridge-i7"><x>4</x></core>
+	<core uarch="hd4000"><x>12</x></core>
+	<basehz>2.5e9</basehz>
+	<tdp>45</tdp>
+	<cache type="unified">
+		<l>3</l>
+		<b>8e6</b>
+	</cache>
+	<die>
+		<area>160</area>
+		<package>LGA1155</package>
+		<tech>FinFET</tech>
+		<process>22</process>
+		<transistors>1.4e9</transistors>
+	</die>	
+	<product>Core i7</product>
+</processor>
+<processor name="i5-3570K">
+	<core uarch="ivybridge-i5"><x>4</x></core>
+	<core uarch="hd4000"><x>12</x></core>
+	<basehz>3.4e9</basehz>
+	<tdp>77</tdp>
+	<cache type="unified">
+		<l>3</l>
+		<b>6e6</b>
+	</cache>
+	<die>
+		<process>22</process>
+		<area>160</area>
+		<package>LGA1155</package>
+		<tech>FinFET</tech>
+		<transistors>1.4e9</transistors>
+	</die>	
+	<product>Core i5</product>
+</processor>
+</codename>
