@@ -1,0 +1,13 @@
+<uarchfam name="HD Graphics">
+<uarch name="hd4000">
+	<isa name="HLSL5"/>
+	<isa name="DX11"/>
+	<isa name="OpenCL1.1"/>
+	<smt>8</smt>
+</uarch>
+<uarch name="hd3000">
+	<isa name="HLSL4.1"/>
+	<isa name="DX10.1"/>
+	<smt>5</smt>
+</uarch>
+</uarchfam>

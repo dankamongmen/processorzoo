@@ -2,6 +2,7 @@
 <codename name="core">
 <processor name="i7-2700K">
 	<core uarch="sandybridge-i7"><x>4</x></core>
+	<core uarch="hd3000"><x>12</x></core>
 	<basehz>3.5e9</basehz>
 	<tdp>95</tdp>
 	<cache type="unified">
@@ -18,6 +19,7 @@
 </processor>
 <processor name="i7-2600K">
 	<core uarch="sandybridge-i7"><x>4</x></core>
+	<core uarch="hd3000"><x>12</x></core>
 	<basehz>3.4e9</basehz>
 	<tdp>95</tdp>
 	<cache type="unified">
@@ -34,6 +36,7 @@
 </processor>
 <processor name="i5-2500K">
 	<core uarch="sandybridge-i5"><x>4</x></core>
+	<core uarch="hd3000"><x>12</x></core>
 	<basehz>3.3e9</basehz>
 	<tdp>95</tdp>
 	<cache type="unified">

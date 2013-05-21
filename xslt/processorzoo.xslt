@@ -136,12 +136,19 @@ fjs.parentNode.insertBefore(js, fjs);
 		</xsl:choose>
 	</td>
 	<td><xsl:value-of select="@name"/></td>
-	<td><a class="uarchlink">
-		<xsl:attribute name="href">#
-			<xsl:value-of select="core/@uarch"/>
-		</xsl:attribute>
-		<xsl:value-of select="core/@uarch"/>
-	</a></td>
+	<td>
+	<xsl:for-each select="core">
+		<a class="uarchlink">
+			<xsl:attribute name="href">#
+				<xsl:value-of select="@uarch"/>
+			</xsl:attribute>
+			<xsl:value-of select="@uarch"/>
+		</a>
+		<xsl:choose>
+			<xsl:when test="x">(<xsl:value-of select="x"/>x)</xsl:when>
+		</xsl:choose>
+	</xsl:for-each>
+	</td>
 	<td><xsl:value-of select="addrbits"/></td>
 	<td><xsl:value-of select="logaddr"/></td>
 	<td><xsl:value-of select='format-number(basehz, "#")' /></td>
