@@ -1,5 +1,17 @@
 <uarchfam name="sandy bridge">
 <uarch name="sandybridge-i7">
 	<isa name="x86-64"/>
+	<cache type="data">
+		<l>1</l>
+		<b>32e3</b>
+	</cache>
+	<cache type="code">
+		<l>1</l>
+		<b>32e3</b>
+	</cache>
+	<cache type="unified">
+		<l>2</l>
+		<b>256e3</b>
+	</cache>
 </uarch>
 </uarchfam>

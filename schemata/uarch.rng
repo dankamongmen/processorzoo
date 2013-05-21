@@ -22,6 +22,9 @@
 	<element name="uarch">
 		<attribute name="name"><data type="string"/></attribute>
 		<interleave>
+			<zeroOrMore>
+				<externalRef href="cache.rng"/>
+			</zeroOrMore>
 			<optional><element name="smt"><data type="integer"/></element></optional>
 			<optional><element name="rob"><data type="integer"/></element></optional>
 			<optional><element name="stations"><data type="integer"/></element></optional>
