@@ -1,6 +1,6 @@
 <codename name="Kepler">
 <processor name="GK104">
- <core uarch="cuda3"></core>
+ <core uarch="cuda3"><x>8</x></core>
  <basehz>1.006e9</basehz>
  <tdp>195</tdp>
  <die>
@@ -11,12 +11,22 @@
 </processor>
 
 <processor name="GK107">
- <core uarch="cuda3"></core>
+ <core uarch="cuda3"><x>2</x></core>
  <basehz>900e6</basehz>
  <die>
-  <transistors>1.3e9</transistors>
+  <transistors>1.27e9</transistors>
   <process>28</process>
   <area>118</area>
+ </die>
+</processor>
+
+<processor name="GK110">
+ <core uarch="cuda3"><x>15</x></core>
+ <basehz>836e6</basehz>
+ <die>
+  <transistors>7.08e9</transistors>
+  <process>28</process>
+  <area>561</area>
  </die>
 </processor>
 </codename>

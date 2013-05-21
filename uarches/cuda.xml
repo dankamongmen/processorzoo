@@ -1,17 +1,37 @@
 <uarchfam name="CUDA">
 <uarch name="cuda3">
 	<isa name="SASS"/>
+	<smt>192</smt>
+	<peakissue>2</peakissue>
 </uarch>
 <uarch name="cuda2.1">
 	<isa name="SASS"/>
+	<smt>48</smt>
+	<peakissue>2</peakissue>
 </uarch>
 <uarch name="cuda2">
 	<isa name="SASS"/>
+	<smt>32</smt>
+	<peakissue>1</peakissue>
+</uarch>
+<uarch name="cuda1.3">
+	<isa name="SASS"/>
+	<smt>8</smt>
+	<peakissue>1</peakissue>
+</uarch>
+<uarch name="cuda1.2">
+	<isa name="SASS"/>
+	<smt>8</smt>
+	<peakissue>1</peakissue>
 </uarch>
 <uarch name="cuda1.1">
 	<isa name="SASS"/>
+	<smt>8</smt>
+	<peakissue>1</peakissue>
 </uarch>
 <uarch name="cuda1">
 	<isa name="SASS"/>
+	<smt>8</smt>
+	<peakissue>1</peakissue>
 </uarch>
 </uarchfam>

@@ -3,6 +3,7 @@
  <core uarch="haswell-i7"><x>4</x></core>
  <core uarch="hd4600"><x>20</x></core>
  <basehz>3.5e9</basehz>
+ <logaddr>64</logaddr>
  <cache type="unified">
   <l>3</l>
   <b>8e6</b>
@@ -17,6 +18,7 @@
  <core uarch="haswell-i7"><x>4</x></core>
  <core uarch="hd5200"><x>40</x></core>
  <basehz>3.2e9</basehz>
+ <logaddr>64</logaddr>
  <cache type="unified">
   <l>3</l>
   <b>6e6</b>

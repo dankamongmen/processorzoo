@@ -5,6 +5,7 @@
 	<core uarch="hd3000"><x>12</x></core>
 	<basehz>3.5e9</basehz>
 	<tdp>95</tdp>
+	<logaddr>64</logaddr>
 	<cache type="unified">
 		<l>3</l>
 		<b>8e6</b>
@@ -22,6 +23,7 @@
 	<core uarch="hd3000"><x>12</x></core>
 	<basehz>3.4e9</basehz>
 	<tdp>95</tdp>
+	<logaddr>64</logaddr>
 	<cache type="unified">
 		<l>3</l>
 		<b>8e6</b>
@@ -39,6 +41,7 @@
 	<core uarch="hd3000"><x>12</x></core>
 	<basehz>3.3e9</basehz>
 	<tdp>95</tdp>
+	<logaddr>64</logaddr>
 	<cache type="unified">
 		<l>3</l>
 		<b>6e6</b>

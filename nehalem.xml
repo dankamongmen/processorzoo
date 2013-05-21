@@ -5,6 +5,7 @@
  <core uarch="nehalem-htxeon"><x>8</x></core>
  <basehz>2.26e9</basehz>
  <tdp>130</tdp>
+ <logaddr>64</logaddr>
  <cache type="unified">
   <l>3</l>
   <b>24e6</b>
@@ -24,6 +25,7 @@
  <core uarch="nehalem-htxeon"><x>8</x></core>
  <basehz>2e9</basehz>
  <tdp>130</tdp>
+ <logaddr>64</logaddr>
  <cache type="unified">
   <l>3</l>
   <b>24e6</b>
