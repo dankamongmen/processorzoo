@@ -45,8 +45,8 @@ _gaq.push(['_trackPageview']);
 	</head>
 	<body>
 		<div class="main">
-		<h3><a href="https://nick-black.com">nick black</a> presents&hellip;</h3>
-		<center><h1>THE PROCESSOR ZOO</h1></center>
+		<center><h3><a href="https://nick-black.com">nick black</a> presents&hellip;</h3>
+		<h1>THE PROCESSOR ZOO</h1></center>
 		<div class="bigcount">
 		<center><b>Currently showing <xsl:value-of select="count(//processor)"/>
 		processors and
