@@ -238,6 +238,14 @@ fjs.parentNode.insertBefore(js, fjs);
 	</xsl:for-each>
 	</td>
 	<td>
+	<xsl:for-each select="tlb">
+		<xsl:sort select="l" />
+		L<xsl:value-of select="l"/>
+		<xsl:for-each select="page">
+			(<xsl:value-of select="@entries"/>x
+			<xsl:value-of select="@size"/>B)
+		</xsl:for-each>
+	</xsl:for-each>
 		<!-- handle TLBS fixme -->
 	</td>
 	<td>
