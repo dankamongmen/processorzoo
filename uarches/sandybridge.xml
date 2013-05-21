@@ -9,6 +9,7 @@
 	<stations>54</stations>
 	<rob>168</rob>
 	<physregs>304</physregs>
+	<peakret>4</peakret>
 	<cache type="data">
 		<l>1</l>
 		<b>32e3</b>
@@ -51,6 +52,7 @@
 	<stations>54</stations>
 	<rob>168</rob>
 	<physregs>304</physregs>
+	<peakret>4</peakret>
 	<cache type="data">
 		<l>1</l>
 		<b>32e3</b>

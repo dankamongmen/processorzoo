@@ -1,12 +1,30 @@
 <codename name="haswell">
 <processor name="i7-4770K">
  <core uarch="haswell-i7"><x>4</x></core>
+ <core uarch="hd4600"><x>20</x></core>
  <basehz>3.5e9</basehz>
  <cache type="unified">
   <l>3</l>
   <b>8e6</b>
  </cache>
+ <die>
+	 <package>LGA1150</package>
+ </die>
  <tdp>84</tdp>
+ <product>core i7</product>
+</processor>
+<processor name="i7-4770R">
+ <core uarch="haswell-i7"><x>4</x></core>
+ <core uarch="hd5200"><x>40</x></core>
+ <basehz>3.2e9</basehz>
+ <cache type="unified">
+  <l>3</l>
+  <b>6e6</b>
+ </cache>
+ <die>
+	 <package>BGA</package>
+ </die>
+ <tdp>65</tdp>
  <product>core i7</product>
 </processor>
 </codename>
