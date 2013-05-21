@@ -1,5 +1,9 @@
 <uarchfam name="amd386">
 <uarch name="amd386">
-	<isa name="i386"/>
+ <isa name="i386"/>
+ <tlb type="unified">
+	 <l>1</l>
+	 <page size="4e3" entries="32"/>
+ </tlb>
 </uarch>
 </uarchfam>
