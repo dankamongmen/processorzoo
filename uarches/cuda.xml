@@ -1,4 +1,4 @@
-<uarchfam name="cuda">
+<uarchfam name="CUDA">
 <uarch name="cuda3">
 	<isa name="sass"/>
 </uarch>
