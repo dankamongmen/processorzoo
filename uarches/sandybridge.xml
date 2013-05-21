@@ -21,6 +21,10 @@
 		<l>2</l>
 		<b>256e3</b>
 	</cache>
+	<cache type="code">
+		<l>0</l>
+		<b>6e6</b> <!-- 1.5k uops... FIXME -->
+	</cache>
 	<tlb type="data">
 		<l>1</l>
 		<page size="4e3" entries="64"/>
@@ -58,6 +62,10 @@
 	<cache type="unified">
 		<l>2</l>
 		<b>256e3</b>
+	</cache>
+	<cache type="code">
+		<l>0</l>
+		<b>6e6</b> <!-- 1.5k uops... FIXME -->
 	</cache>
 	<tlb type="data">
 		<l>1</l>
