@@ -1,0 +1,38 @@
+<codename name="NEC x86">
+<processor name="μPD70108C-8">
+ <core uarch="V20"></core>
+ <basehz>8</basehz>
+ <addrbits>20</addrbits>
+ <logaddr>16</logaddr>
+ <die>
+  <area>790.4</area> <!--52 * 15.2</area>-->
+  <tech>CMOS</tech>
+  <package>40PLASDIP</package>
+  <transistors>63e3</transistors>
+ </die>
+ <bus type="biu">
+  <b>1</b>
+  <clock>
+   <basehz>5</basehz>
+  </clock>
+ </bus>
+</processor>
+<processor name="μPD70108C-5">
+ <core uarch="V20"></core>
+ <basehz>5</basehz>
+ <addrbits>20</addrbits>
+ <logaddr>16</logaddr>
+ <die>
+  <area>790.4</area> <!--52 * 15.2</area>-->
+  <tech>CMOS</tech>
+  <package>40PLASDIP</package>
+  <transistors>63e3</transistors>
+ </die>
+ <bus type="biu">
+  <b>1</b>
+  <clock>
+   <basehz>5</basehz>
+  </clock>
+ </bus>
+</processor>
+</codename>

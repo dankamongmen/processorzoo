@@ -1,0 +1,28 @@
+<uarchfam name="V20">
+<uarch name="V20">
+	<isa name="i186"/>
+	<isa name="8080"/>
+	<isa name="V20"/>
+ 	<pipeline>2</pipeline>
+	<peakissue>1</peakissue>
+	<peakret>1</peakret>
+	<rob>0</rob>
+	<stations>0</stations>
+	<lfbs>0</lfbs>
+	<storebufs>0</storebufs>
+	<loadbufs>0</loadbufs>
+</uarch>
+<uarch name="V30">
+	<isa name="i186"/>
+	<isa name="8080"/>
+	<isa name="V20"/>
+ 	<pipeline>2</pipeline>
+	<peakissue>1</peakissue>
+	<peakret>1</peakret>
+	<rob>0</rob>
+	<stations>0</stations>
+	<lfbs>0</lfbs>
+	<storebufs>0</storebufs>
+	<loadbufs>0</loadbufs>
+</uarch>
+</uarchfam>
