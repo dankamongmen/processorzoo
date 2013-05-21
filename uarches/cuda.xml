@@ -1,17 +1,17 @@
 <uarchfam name="CUDA">
 <uarch name="cuda3">
-	<isa name="sass"/>
+	<isa name="SASS"/>
 </uarch>
 <uarch name="cuda2.1">
-	<isa name="sass"/>
+	<isa name="SASS"/>
 </uarch>
 <uarch name="cuda2">
-	<isa name="sass"/>
+	<isa name="SASS"/>
 </uarch>
 <uarch name="cuda1.1">
-	<isa name="sass"/>
+	<isa name="SASS"/>
 </uarch>
 <uarch name="cuda1">
-	<isa name="sass"/>
+	<isa name="SASS"/>
 </uarch>
 </uarchfam>
