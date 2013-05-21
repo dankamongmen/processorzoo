@@ -1,7 +1,7 @@
-<codename name="8088">
+<codename name="Intel 8088">
 <processor name="8088">
  <core uarch="8088"></core>
- <basehz>5</basehz>
+ <basehz>4.77</basehz>
  <addrbits>20</addrbits>
  <logaddr>16</logaddr>
  <die>
@@ -14,7 +14,7 @@
  <bus type="biu">
   <b>1</b>
   <clock>
-   <basehz>5</basehz>
+   <basehz>4.77</basehz>
   </clock>
  </bus>
 </processor>

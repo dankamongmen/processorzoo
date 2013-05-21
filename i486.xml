@@ -1,7 +1,9 @@
-<codename name="i486">
+<codename name="AMD 80486">
 <processor name="Am486 DX-40">
  <core uarch="amd486"></core>
  <basehz>40</basehz>
+ <addrbits>32</addrbits>
+ <logaddr>32</logaddr>
  <cache type="unified">
   <l>1</l>
   <b>8192</b>
@@ -9,15 +11,36 @@
  <die>
   <transistors>1e6</transistors>
   <volts>5</volts>
+  <package>168CPGA</package>
+  <process>500</process>
  </die>
+ <bus type="biu">
+  <b>4</b>
+  <baset>40</baset>
+ </bus>
 </processor>
 
-<processor name="Am486 DX-40">
+<processor name="Am486 DX2-50">
  <core uarch="amd486"></core>
- <basehz>40</basehz>
+ <basehz>50</basehz>
+ <addrbits>32</addrbits>
+ <logaddr>32</logaddr>
  <cache type="unified">
   <l>1</l>
   <b>8192</b>
  </cache>
+ <die>
+  <package>168CPGA</package>
+  <process>500</process>
+  <transistors>1e6</transistors>
+  <volts>5</volts>
+ </die>
+ <bus type="biu">
+  <b>4</b>
+  <clock>
+   <mult>2</mult>
+   <basehz>25</basehz>
+  </clock>
+ </bus>
 </processor>
 </codename>

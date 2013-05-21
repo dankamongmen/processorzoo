@@ -1,4 +1,4 @@
-<codename name="i386">
+<codename name="AMD 80386">
 <processor name="Am386 SX-20">
  <core uarch="amd386"></core>
  <basehz>20</basehz>

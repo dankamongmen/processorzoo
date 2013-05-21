@@ -1,7 +1,7 @@
-<codename name="8086">
+<codename name="Intel 8086">
 <processor name="C8086">
  <core uarch="8086"></core>
- <basehz>5</basehz>
+ <basehz>4.77</basehz>
  <tdp>1.87</tdp>
  <addrbits>20</addrbits>
  <logaddr>16</logaddr>
@@ -16,7 +16,7 @@
  <bus type="biu">
   <b>2</b>
   <clock>
-   <basehz>5</basehz>
+   <basehz>4.77</basehz>
   </clock>
  </bus>
 </processor>
