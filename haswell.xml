@@ -1,4 +1,19 @@
 <codename name="haswell">
+<processor name="i3-4160">
+ <core uarch="haswell-i3"><x>2</x></core>
+ <core uarch="hd4400"><x>20</x></core>
+ <basehz>3.6e9</basehz>
+ <logaddr>64</logaddr>
+ <cache type="unified">
+  <l>3</l>
+  <b>3e6</b>
+ </cache>
+ <die>
+	 <package>LGA1150</package>
+ </die>
+ <tdp>54</tdp>
+ <product>core i3</product>
+</processor>
 <processor name="i7-4770K">
  <core uarch="haswell-i7"><x>4</x></core>
  <core uarch="hd4600"><x>20</x></core>
