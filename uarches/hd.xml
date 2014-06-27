@@ -6,7 +6,12 @@
 </uarch>
 <uarch name="hd4600">
 	<isa name="HLSL5"/>
-	<isa name="DX11"/>
+	<isa name="DX11.1"/>
+	<isa name="OpenCL1.2"/>
+</uarch>
+<uarch name="hd4400">
+	<isa name="HLSL5"/>
+	<isa name="DX11.1"/>
 	<isa name="OpenCL1.2"/>
 </uarch>
 <uarch name="hd4000">
